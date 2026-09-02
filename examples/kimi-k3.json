@@ -1,0 +1,16 @@
+{
+  "model": "Kimi K3",
+  "variant": "max",
+  "source": "https://artificialanalysis.ai/models — chart dump 2026-09-01",
+  "elo_gdpval": 1668,
+  "terminal_bench_21": 0.850,
+  "tau3_banking": 0.460,
+  "hle": 0.469,
+  "omniscience_accuracy": 0.476,
+  "omniscience_non_hallu": 0.468,
+  "scicode": 0.587,
+  "gpqa": 0.935,
+  "critpt": 0.234,
+  "aa_lcr": 0.827,
+  "published_index_aa": 59.70
+}

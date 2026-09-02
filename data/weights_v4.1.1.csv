@@ -1,0 +1,11 @@
+component,weight,category,metric_type,notes
+GDPval-AA,0.20,Agents,elo_normalized,"s = clamp((Elo - 500) / 2000, 0, 1); human Elo anchored at 1000"
+Terminal-Bench 2.1,0.16,Coding,pass_at_1,"s = score % / 100"
+tau3-Banking,0.14,Agents,pass_at_1,"s = score % / 100"
+HLE,0.12,Scientific,pass_at_1,"s = score % / 100"
+Omniscience Accuracy,0.08,General,pass_at_1,"s = score % / 100"
+Omniscience Non-hallu,0.04,General,pass_at_1,"s = score % / 100"
+SciCode,0.08,Scientific,pass_at_1,"s = score % / 100"
+GPQA,0.06,Scientific,pass_at_1,"s = score % / 100"
+CritPt,0.06,Scientific,pass_at_1,"s = score % / 100"
+AA-LCR,0.06,General,pass_at_1,"s = score % / 100"

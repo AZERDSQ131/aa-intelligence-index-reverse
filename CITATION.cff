@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+title: aa-intelligence-index-reverse
+message: >-
+  If you use this reconstruction, please cite it using the
+  metadata below.
+type: software
+authors:
+  - name: Jules
+version: 0.1.0
+date-released: "2026-09-02"
+license: MIT
+repository-code: "https://github.com/AZERDSQ131/aa-intelligence-index-reverse"
+abstract: >-
+  Independent, community reconstruction of the scoring formula behind the
+  Artificial Analysis Intelligence Index (methodology v4.1.1), with a
+  dependency-free calculator, machine-readable weights and component-score
+  data for 8 models reproducing the published Index within max |Delta| 0.30
+  on the band ~56-63. Not affiliated with Artificial Analysis.
+keywords:
+  - benchmark
+  - llm
+  - evaluation
+  - artificial-analysis
+  - intelligence-index
+  - reverse-engineering

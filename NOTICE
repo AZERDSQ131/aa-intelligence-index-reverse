@@ -1,0 +1,55 @@
+NOTICE — aa-intelligence-index-reverse
+======================================
+
+Last updated: 2026-09-02
+
+1. What this project is
+-----------------------
+An independent, community reconstruction of the scoring formula behind the
+**Artificial Analysis Intelligence Index** (methodology v4.1.1), shipped as:
+
+- a machine-readable weights table (`data/weights_v4.1.1.csv`)
+- a machine-readable matrix of public component scores (`data/models.csv`)
+- a small, dependency-free calculator (`src/aa_index.py`)
+- a worked example reproducing the published Index of 8 models to within
+  |Delta| <= 0.31 (see `examples/` and the README)
+
+2. Non-affiliation
+------------------
+This project is NOT affiliated with, endorsed by, or connected to
+Artificial Analysis, or to any model provider whose models appear in the
+data files (Anthropic, xAI, Moonshot AI, Z.ai, Alibaba, Google, etc.).
+"Artificial Analysis Intelligence Index", "GDPval-AA", "AA-LCR" and all
+related benchmark names are the property of their respective owners.
+
+3. Data provenance
+------------------
+- The weights come from the public methodology pages of Artificial
+  Analysis (v4.1.1):
+  https://artificialanalysis.ai/methodology/intelligence-benchmarking
+  https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
+  https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v4-1
+- The component scores (the "s_i" values in `data/models.csv`) were read
+  from publicly displayed charts/dumps on artificialanalysis.ai on
+  2026-09-01/02. No private data, no scraped paywalled content, no
+  redistribution of raw HTML.
+- The "Index AA" column in `data/models.csv` is the value publicly
+  displayed by Artificial Analysis for each model at the same date.
+
+4. What you may do
+------------------
+- Reuse the formula, the code and the data files with attribution
+  (MIT for code; the weights themselves are CC BY 4.0 via Artificial
+  Analysis — attribute Artificial Analysis when redistributing them).
+- Submit PRs to add models: each new row MUST include the source URL and
+  the date of the AA chart dump (see CONTRIBUTING.md).
+
+5. Known limits (do not oversell the result)
+--------------------------------------------
+- The reconstruction is validated ONLY on the Index band ~56-63 (8 models,
+  max |Delta| 0.31). Models outside this band are NOT yet validated.
+- All deltas are <= 0, consistent with rounding noise in the public
+  component scores, not with a structural formula error.
+- The Elo <-> model-variant mapping (e.g. "Grok 4.6 (high)") was done by
+  hand; a wrong row would fail loudly in recomputation, the other rows
+  would not be affected.

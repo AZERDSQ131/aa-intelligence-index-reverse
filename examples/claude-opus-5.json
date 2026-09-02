@@ -1,0 +1,16 @@
+{
+  "model": "Claude Opus 5",
+  "variant": "max",
+  "source": "https://artificialanalysis.ai/models — chart dump 2026-09-01",
+  "elo_gdpval": 1824,
+  "terminal_bench_21": 0.891,
+  "tau3_banking": 0.421,
+  "hle": 0.549,
+  "omniscience_accuracy": 0.609,
+  "omniscience_non_hallu": 0.392,
+  "scicode": 0.557,
+  "gpqa": 0.932,
+  "critpt": 0.291,
+  "aa_lcr": 0.757,
+  "published_index_aa": 63.05
+}
