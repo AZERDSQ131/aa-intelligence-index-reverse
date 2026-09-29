@@ -308,7 +308,7 @@ def main(argv: list[str] | None = None) -> int:
             print_summary(rows, weights)
         return 0
 
-    # --model: either a JSON file or a model name from data/models.csv
+    # --model: either a JSON file or a model name from the models CSV
     candidate = Path(args.model)
     if candidate.suffix == ".json" and candidate.exists():
         data = load_model_json(candidate)
