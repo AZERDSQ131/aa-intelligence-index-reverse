@@ -64,8 +64,8 @@ No dependencies. Python ≥ 3.9.
 # 1. v4.3.2 status (matrix empty until the first public dump lands)
 python src/aa_index.py --all
 
-# 2. Archived v4.1.1 verification (8 models, still green)
-python src/aa_index.py --all --weights data/weights_v4.1.1.csv --models data/models.csv
+# 2. Full per-component breakdown for one model
+python src/aa_index.py --model "Kimi K3"
 
 # 3. Archived v4.1.1 verification (8 models, still green)
 python src/aa_index.py --all --weights data/weights_v4.1.1.csv --models data/models.csv
