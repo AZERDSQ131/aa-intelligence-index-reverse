@@ -97,7 +97,7 @@ normalisation Elo GDPval sont correctes.
 ### Exemple : calculer depuis ton propre dump JSON
 
 ```jsonc
-// examples/claude-opus-5.json — mêmes clés que les colonnes de data/models.csv
+// examples/v4.3.2-template.json — mêmes clés que les colonnes de data/models_v4.3.2.csv
 {
   "model": "Example Model",
   "variant": "max",
