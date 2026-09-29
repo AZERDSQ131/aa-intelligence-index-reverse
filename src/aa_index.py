@@ -5,9 +5,9 @@ Formula (methodology v4.1.1, published by Artificial Analysis):
 
     Index = 100 * sum_i (w_i * s_i),   with sum(w_i) = 1 and s_i in [0, 1]
 
-Ten components enter the Index. Nine of them are pass@1 style scores
-(their s_i is simply the published percentage divided by 100). One of them,
-GDPval-AA, is an Elo rating and needs a dedicated normalization:
+Eleven score components (from 10 evaluations) enter the Index. Nine of them
+are pass@1-style scores (their s_i is the published rate in [0, 1]). Two of
+them are Elo ratings and share one normalization:
 
     s_Elo = clamp((Elo - 500) / 2000, 0, 1)
 
