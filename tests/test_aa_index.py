@@ -21,7 +21,6 @@ aa_index = importlib.util.module_from_spec(spec)
 sys.modules["aa_index"] = aa_index
 spec.loader.exec_module(aa_index)
 
-
 LEGACY_WEIGHTS = REPO_ROOT / "data" / "weights_v4.1.1.csv"
 LEGACY_MODELS = REPO_ROOT / "data" / "models.csv"
 WEIGHTS_432 = REPO_ROOT / "data" / "weights_v4.3.2.csv"
