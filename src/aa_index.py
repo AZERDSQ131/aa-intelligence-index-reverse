@@ -153,7 +153,9 @@ def load_model_json(path: Path) -> dict[str, float]:
           "terminal_bench_21": 0.891, ...
         }
 
-    Keys use the same names as the columns of data/models.csv.
+    Keys use the same names as the columns of data/models_v4.3.2.csv.
+    Legacy v4.1.1 keys (terminal_bench_21, tau3_banking, gpqa, aa_lcr)
+    are still accepted for use with --weights data/weights_v4.1.1.csv.
     """
     with open(path, encoding="utf-8") as handle:
         data = json.load(handle)
