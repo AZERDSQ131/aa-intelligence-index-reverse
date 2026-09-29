@@ -74,10 +74,10 @@ class TestDataFiles(unittest.TestCase):
                 categories[row["category"]] = (
                     categories.get(row["category"], 0.0) + float(row["weight"])
                 )
-        self.assertAlmostEqual(categories["Agents"], 0.34, places=6)
-        self.assertAlmostEqual(categories["Coding"], 0.16, places=6)
-        self.assertAlmostEqual(categories["Scientific"], 0.32, places=6)
-        self.assertAlmostEqual(categories["General"], 0.18, places=6)
+        self.assertAlmostEqual(categories["Agents"], 0.30, places=6)
+        self.assertAlmostEqual(categories["Coding"], 0.20, places=6)
+        self.assertAlmostEqual(categories["General"], 0.30, places=6)
+        self.assertAlmostEqual(categories["Scientific Reasoning"], 0.20, places=6)
 
     def test_expected_weights(self):
         expected = {
