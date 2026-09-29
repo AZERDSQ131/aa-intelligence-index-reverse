@@ -3,6 +3,7 @@
 Run from the repo root:  python -m unittest discover -s tests -v
 """
 
+import csv
 import json
 import unittest
 from pathlib import Path
