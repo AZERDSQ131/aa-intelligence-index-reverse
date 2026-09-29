@@ -128,6 +128,9 @@ aa-intelligence-index-reverse/
 ├── CITATION.cff               how to cite this reconstruction
 ├── CONTRIBUTING.md            how to add a model / a correction
 ├── data/
+Legacy v4.1.1 dumps (`examples/claude-opus-5.json`, `examples/kimi-k3.json`)
+keep working with `--weights data/weights_v4.1.1.csv --models data/models.csv`.
+
 │   ├── weights_v4.3.2.csv     the 11 v4.3.2 weights (current default)
 │   ├── models_v4.3.2.csv      v4.3.2 sᵢ matrix (awaits first dump)
 │   ├── weights_v4.1.1.csv     archived v4.1.1 weights
