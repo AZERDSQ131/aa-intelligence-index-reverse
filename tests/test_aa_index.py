@@ -27,13 +27,19 @@ class TestCoreMath(unittest.TestCase):
         self.assertEqual(aa_index.clamp01(0.42), 0.42)
         self.assertEqual(aa_index.clamp01(1.7), 1.0)
 
-    def test_gdpval_normalization_anchors(self):
-        # (Elo - 500) / 2000, clamped to [0, 1]
-        self.assertAlmostEqual(aa_index.gdpval_normalize(500), 0.0)
-        self.assertAlmostEqual(aa_index.gdpval_normalize(1000), 0.25)  # human anchor
-        self.assertAlmostEqual(aa_index.gdpval_normalize(1824), 0.662)  # Opus 5
-        self.assertAlmostEqual(aa_index.gdpval_normalize(2500), 1.0)   # clamped
-        self.assertAlmostEqual(aa_index.gdpval_normalize(100), 0.0)    # clamped
+    def test_elo_normalization_anchors(self):
+        # (Elo - 500) / 2000, clamped to [0, 1] — shared by both Elo
+        # components in v4.3.2 (Briefcase v1.1, GDPval-AA v2.1).
+        self.assertAlmostEqual(aa_index.elo_normalize(500), 0.0)
+        self.assertAlmostEqual(aa_index.elo_normalize(1000), 0.25)  # Briefcase anchor
+        self.assertAlmostEqual(aa_index.elo_normalize(1600), 0.55)  # GDPval v2.1 anchor
+        self.assertAlmostEqual(aa_index.elo_normalize(1824), 0.662)
+        self.assertAlmostEqual(aa_index.elo_normalize(2500), 1.0)   # clamped
+        self.assertAlmostEqual(aa_index.elo_normalize(100), 0.0)    # clamped
+
+    def test_legacy_aliases(self):
+        self.assertAlmostEqual(aa_index.gdpval_normalize(1600), 0.55)
+        self.assertAlmostEqual(aa_index.briefcase_normalize(1000), 0.25)
 
     def test_reconstruct_index_known_value(self):
         weights = {"A": 0.6, "B": 0.4}
