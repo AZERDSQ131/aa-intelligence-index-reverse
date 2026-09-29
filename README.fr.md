@@ -7,6 +7,11 @@ toi-même en moins d'une minute**.
 
 > **Non affilié à Artificial Analysis.** Poids © Artificial Analysis (CC BY 4.0) ;
 > reconstruction, code et commentaires : MIT. Voir [NOTICE](NOTICE).
+> **Statut au 2026-09-29 :** calculateur + poids passés en **v4.3.2** (11 composantes) ;
+> la reproduction v4.1.1 à 8 modèles ci-dessous est archivée et passe toujours via
+> `--weights data/weights_v4.1.1.csv --models data/models.csv`.
+> `data/models_v4.3.2.csv` attend son premier dump public complet — voir
+> [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 
