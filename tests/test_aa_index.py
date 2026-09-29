@@ -69,7 +69,7 @@ class TestDataFiles(unittest.TestCase):
         import csv
 
         categories = {}
-        with open(REPO_ROOT / "data" / "weights_v4.1.1.csv", newline="") as f:
+        with open(WEIGHTS_432, newline="") as f:
             for row in csv.DictReader(f):
                 categories[row["category"]] = (
                     categories.get(row["category"], 0.0) + float(row["weight"])
