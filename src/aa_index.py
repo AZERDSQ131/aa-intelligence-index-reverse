@@ -72,7 +72,17 @@ def gdpval_normalize(elo: float) -> float:
 
     Example: an Elo of 1824 gives s = (1824 - 500) / 2000 = 0.662.
     """
-    return clamp01((elo - GDPVAL_OFFSET) / GDPVAL_SCALE)
+    return clamp01((elo - ELO_OFFSET) / ELO_SCALE)
+
+
+def gdpval_normalize(elo: float) -> float:
+    """Legacy alias of elo_normalize (v4.1.1 API kept for compatibility)."""
+    return elo_normalize(elo)
+
+
+def briefcase_normalize(elo: float) -> float:
+    """Normalize an AA-Briefcase v1.1 Elo into s in [0, 1]."""
+    return elo_normalize(elo)
 
 
 def load_weights(path: Path = DEFAULT_WEIGHTS_CSV) -> dict[str, float]:
