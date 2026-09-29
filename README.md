@@ -2,7 +2,7 @@
 
 An **independent, community reconstruction** of the scoring formula behind the
 [Artificial Analysis Intelligence Index](https://artificialanalysis.ai/methodology/intelligence-benchmarking)
-(methodology v4.1.1) — with code and data that let you **verify it yourself in
+(methodology v4.3.2 — v4.1.1 kept as archive) — with code and data that let you **verify it yourself in
 under a minute**.
 
 > **Not affiliated with Artificial Analysis.** Weights © Artificial Analysis
