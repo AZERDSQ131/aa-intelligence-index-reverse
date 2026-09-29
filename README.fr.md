@@ -54,7 +54,7 @@ Tous les Δ sont ≤ 0 — cohérent avec un bruit d'arrondi des scores publics,
 Aucune dépendance. Python ≥ 3.9.
 
 ```bash
-# 1. Vérifier les 8 modèles contre l'Index publié
+# 1. Statut v4.3.2 (matrice vide jusqu'au premier dump public)
 python src/aa_index.py --all
 
 # 2. Vérification archivée v4.1.1 (8 modèles, toujours verte)
