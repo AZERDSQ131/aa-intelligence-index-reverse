@@ -128,6 +128,9 @@ use `examples/v4.3.2-template.json`.)
 }
 ```
 
+Legacy v4.1.1 dumps (`examples/claude-opus-5.json`, `examples/kimi-k3.json`)
+keep working with `--weights data/weights_v4.1.1.csv --models data/models.csv`.
+
 Add a model the same way → one CSV row / one JSON file + a PR
 (see [CONTRIBUTING.md](CONTRIBUTING.md)).
 
