@@ -40,8 +40,8 @@ DEFAULT_MODELS_CSV = REPO_ROOT / "data" / "models.csv"
 
 # GDPval-AA normalization: s = clamp((Elo - 500) / 2000, 0, 1)
 GDPVAL_COMPONENT = "GDPval-AA"
-GDPVAL_OFFSET = 500.0
-GDPVAL_SCALE = 2000.0
+BRIEFCASE_COMPONENT = "AA-Briefcase v1.1"
+GDPVAL_V21_COMPONENT = "GDPval-AA v2.1"
 
 # Mapping: column name in data/models_v4.3.2.csv -> component name in weights CSV.
 # Order matters for display only; the math is a plain weighted sum.
