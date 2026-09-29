@@ -34,7 +34,6 @@ from __future__ import annotations
 import argparse
 import csv
 import json
-    python src/aa_index.py --all --weights data/weights_v4.1.1.csv --models data/models.csv
 import sys
 from pathlib import Path
 
