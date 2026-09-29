@@ -65,7 +65,7 @@ python src/aa_index.py --model examples/claude-opus-5.json
 python src/aa_index.py --all --json
 ```
 
-### Example: a worked component breakdown
+### Example: a worked component breakdown (ARCHIVE — v4.1.1)
 
 `python src/aa_index.py --model examples/kimi-k3.json --weights data/weights_v4.1.1.csv --models data/models.csv` prints the full
 contribution of each benchmark:
