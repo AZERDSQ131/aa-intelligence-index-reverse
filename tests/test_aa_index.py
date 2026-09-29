@@ -1,4 +1,4 @@
-"""Tests for the AA Intelligence Index reconstruction.
+"""Tests for the AA Intelligence Index reconstruction (v4.3.2, with v4.1.1 archive).
 
 Run from the repo root:  python -m unittest discover -s tests -v
 """
