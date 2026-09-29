@@ -146,7 +146,7 @@ aa-intelligence-index-reverse/
 ├── CONTRIBUTING.md            how to add a model / a correction
 ├── data/
 │   ├── weights_v4.3.2.csv     the 11 v4.3.2 weights (current default)
-│   ├── models_v4.3.2.csv      v4.3.2 sᵢ matrix (awaits first dump)
+│   ├── models_v4.3.2.csv      v4.3.2 sᵢ matrix (29 models, 2026-09-29)
 │   ├── weights_v4.1.1.csv     archived v4.1.1 weights
 │   └── models.csv             archived v4.1.1 matrix (8 models)
 ├── src/
