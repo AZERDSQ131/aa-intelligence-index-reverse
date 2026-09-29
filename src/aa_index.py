@@ -70,7 +70,7 @@ def clamp01(value: float) -> float:
 def gdpval_normalize(elo: float) -> float:
     """Convert a GDPval-AA Elo rating into an s in [0, 1].
 
-    Example: an Elo of 1824 gives s = (1824 - 500) / 2000 = 0.662.
+    Example: an Elo of 1600 gives s = (1600 - 500) / 2000 = 0.55.
     """
     return clamp01((elo - ELO_OFFSET) / ELO_SCALE)
 
