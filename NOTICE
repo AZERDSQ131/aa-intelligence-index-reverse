@@ -44,10 +44,10 @@ related benchmark names are the property of their respective owners.
   https://artificialanalysis.ai/methodology/intelligence-benchmarking
   https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
   https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v4-1
-- The component scores (the "s_i" values in `data/models.csv`) were read
-  from publicly displayed charts/dumps on artificialanalysis.ai on
-  2026-09-01/02 (v4.1.1 archive). The v4.3.2 matrix
-  (`data/models_v4.3.2.csv`) is empty pending new public dumps.
+- The v4.3.2 component scores (29 rows in `data/models_v4.3.2.csv`) were read
+  from the public Index-page data payload on artificialanalysis.ai on
+  2026-09-29 (page URL in every row's `source`). No private data, no scraped
+  paywalled content, no redistribution of raw HTML.
 - The "Index AA" column in `data/models.csv` is the value publicly
   displayed by Artificial Analysis for each model at the same date.
 
