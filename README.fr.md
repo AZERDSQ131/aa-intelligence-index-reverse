@@ -154,7 +154,7 @@ aa-intelligence-index-reverse/
 ├── src/
 │   └── aa_index.py            calculateur sans dépendance
 ├── tests/
-│   └── test_aa_index.py       20 tests : formule, deux versions de poids
+│   └── test_aa_index.py       23 tests : formule, matrice v4.3.2, archive v4.1.1
 ├── examples/                  dumps JSON prêts à l'emploi
 │   ├── v4.3.2-template.json
 │   ├── claude-opus-5.json     (archive v4.1.1)
