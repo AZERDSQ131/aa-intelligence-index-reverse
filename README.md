@@ -10,7 +10,7 @@ under a minute**.
 
 ---
 
-## The result, in one table
+## The result, in one table (ARCHIVE — v4.1.1)
 
 `Index = 100 × Σ (wᵢ × sᵢ)` over 10 components, with GDPval-AA Elo normalized
 as `s = clamp((Elo − 500) / 2000)`.
