@@ -146,7 +146,6 @@ CritPt                      0.10   0.234         2.343
 ----------------------------------------------------------------
 Reconstructed Index                              43.55
 AA published Index                               43.59
-| ✅ **Validated** | Formula + weights **v4.3.2** on **29 models, Index ~14–58** (max \|Δ\| 0.12, incl. out-of-band) |
 Delta (reconstr - AA)                            -0.04
 ```
 
