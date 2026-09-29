@@ -138,7 +138,7 @@ aa-intelligence-index-reverse/
 │   ├── claude-opus-5.json
 │   └── kimi-k3.json
 └── docs/
-    └── methodology.md         full derivation, sources, discrepancies
+    └── methodology.md         §0 v4.3.2 + §§2-3 v4.1.1 archive
 ```
 
 ## The weights (v4.3.2 — current)
