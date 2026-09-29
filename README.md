@@ -205,6 +205,8 @@ not match the operative per-component weights — details in
 > The AA FAQ's older "4 pillars × 25%" description is **outdated**; the v4.3.2
 > methodology table is authoritative.
 
+</details>
+
 ## Testing
 
 ```bash
