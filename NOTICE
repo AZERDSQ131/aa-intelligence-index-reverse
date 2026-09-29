@@ -11,10 +11,10 @@ Scientific Reasoning 20 / General 30. This repo tracks the change as:
 new files data/weights_v4.3.2.csv, data/models_v4.3.2.csv and
 calculator default v4.3.2; the v4.1.1 files (data/weights_v4.1.1.csv,
 data/models.csv, examples/claude-opus-5.json, examples/kimi-k3.json)
-are frozen archives. No v4.3.2 public component dump is in the repo yet;
-the first full 11-component dump is the top contribution (see
-CONTRIBUTING.md). The GDP.pdf choice (All-pass headline as s) is
-documented as an open point in docs/methodology.md §0.
+are frozen archives. The v4.3.2 matrix holds 29 live models dumped from the
+public Index-page payload on 2026-09-29 (max |Delta| 0.12, bands ~14-58);
+the GDP.pdf (All-pass) and AutomationBench (partial-score) headline choices
+are confirmed empirically — see docs/methodology.md §0.
 
 1. What this project is
 -----------------------
