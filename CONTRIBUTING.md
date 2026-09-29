@@ -25,6 +25,7 @@ one rule is: **source or it didn't happen.**
 
    ```bash
    python src/aa_index.py --all
+   python src/aa_index.py --model "<your model>"
    python -m unittest discover -s tests
    ```
 
