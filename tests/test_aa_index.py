@@ -51,8 +51,7 @@ class TestCoreMath(unittest.TestCase):
 class TestDataFiles(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.weights = aa_index.load_weights()
-        cls.rows = aa_index.load_models()
+        cls.weights = aa_index.load_weights(WEIGHTS_432)
 
     def test_weights_sum_to_one(self):
         self.assertAlmostEqual(sum(self.weights.values()), 1.0, places=6)
