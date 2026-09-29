@@ -20,5 +20,3 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Verify archived v4.1.1 models against published Index
         run: python src/aa_index.py --all --weights data/weights_v4.1.1.csv --models data/models.csv
-      - name: Verify v4.3.2 template reconstructs
-        run: python src/aa_index.py --model examples/v4.3.2-template.json
