@@ -5,7 +5,11 @@ one rule is: **source or it didn't happen.**
 
 ## Adding a model (the most useful contribution)
 
-1. Get the 10 component scores from the publicly displayed charts on
+> **v4.3.2 schema (current).** New rows go to [`data/models_v4.3.2.csv`](data/models_v4.3.2.csv)
+> with the 11 columns in `examples/v4.3.2-template.json`. The v4.1.1 matrix
+> (`data/models.csv`, 8 models) is frozen — do not append v4.1.1 rows.
+
+1. Get the 11 component scores from the publicly displayed charts on
    [artificialanalysis.ai](https://artificialanalysis.ai/models)
    (the model's page shows each benchmark score; AA-Briefcase v1.1 and
    GDPval-AA v2.1 are Elo ratings).
