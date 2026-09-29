@@ -98,9 +98,6 @@ class TestVerification(unittest.TestCase):
         cls.rows = aa_index.load_models()
 
     def test_published_deltas_match_bilan(self):
-        # Deltas hand-recorded in bilan.md. The hand computation rounded
-        # intermediate values, so exact recomputation may differ by up to
-        # ~0.02 (e.g. Opus 5: exact -0.30 vs hand-recorded -0.31).
         expected = {
             "Claude Opus 5 (max)": -0.31,
             "Grok 4.6 (high)": -0.23,
