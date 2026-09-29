@@ -32,11 +32,9 @@ than ten in-band models would.
 
 ## Priority: out-of-band validation
 
-The reconstruction is currently validated only on the band ~56–63. If you
-dump a complete set of components for a low-Index model, that is the single
-most valuable PR right now. Note: if an out-of-band model does **not**
-match, that is still a valuable PR — it falsifies the extrapolation and we
-will document it in `docs/methodology.md`.
+```bash
+python src/aa_index.py --all --weights data/weights_v4.1.1.csv --models data/models.csv
+```
 
 ## Correcting an existing row
 
