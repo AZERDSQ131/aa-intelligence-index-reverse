@@ -152,7 +152,7 @@ aa-intelligence-index-reverse/
 ├── src/
 │   └── aa_index.py            stdlib-only calculator & verifier
 ├── tests/
-│   └── test_aa_index.py       20 tests: formula, both weights versions
+│   └── test_aa_index.py       23 tests: formula, v4.3.2 matrix, v4.1.1 archive
 ├── examples/                  JSON dumps ready to run
 │   ├── v4.3.2-template.json
 │   ├── claude-opus-5.json     (v4.1.1 archive)
