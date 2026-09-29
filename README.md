@@ -61,7 +61,7 @@ scores, **not** with a structural formula error.
 No dependencies. Python ≥ 3.9.
 
 ```bash
-# 1. v4.3.2 status (matrix empty until the first public dump lands)
+# 1. Verify all 29 models against the published Index (v4.3.2)
 python src/aa_index.py --all
 
 # 2. Full per-component breakdown for one model
