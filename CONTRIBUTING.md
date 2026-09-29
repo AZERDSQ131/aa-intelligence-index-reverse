@@ -9,10 +9,11 @@ one rule is: **source or it didn't happen.**
    [artificialanalysis.ai](https://artificialanalysis.ai/models)
    (the model's page shows each benchmark score; GDPval-AA is an Elo).
 2. Note the **date** of your reading and the **URL** of the model page.
-3. Add **one row** to [`data/models.csv`](data/models.csv):
-   - `elo_gdpval`: the GDPval-AA Elo (e.g. `1824`) — the calculator
-     normalizes it;
-   - the 9 other components as `s` in `[0, 1]` (percentage ÷ 100);
+3. Add **one row** to [`data/models_v4.3.2.csv`](data/models_v4.3.2.csv):
+   - `elo_briefcase`: the AA-Briefcase v1.1 Elo — the calculator normalizes it;
+   - `elo_gdpval`: the GDPval-AA v2.1 Elo — the calculator normalizes it;
+   - the 9 other components as `s` in `[0, 1]` (percentage ÷ 100),
+     with `gdp_pdf` = the **All-pass** headline share (see `docs/methodology.md` §0);
    - `index_aa`: the Index value displayed by AA at the same date;
    - `dump_date` (`YYYY-MM-DD`) + `source` (URL);
 4. Run the verification:
