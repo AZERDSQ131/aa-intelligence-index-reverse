@@ -146,26 +146,16 @@ class TestVerification(unittest.TestCase):
         self.assertLessEqual(payload["max_abs_delta"], 1.0)
 
 
-class TestJsonInput(unittest.TestCase):
-    """The examples/ JSON files produce the same result as the CSV rows."""
-
-    @classmethod
-    def setUpClass(cls):
-        cls.weights = aa_index.load_weights()
-
-    def test_opus5_json_matches_published(self):
-        data = aa_index.load_model_json(REPO_ROOT / "examples" / "claude-opus-5.json")
-        row = {k: "" if v is None else str(v) for k, v in data.items()}
-        components = aa_index.model_row_to_components(row)
-        index, _ = aa_index.reconstruct_index(components, self.weights)
-        self.assertAlmostEqual(index - 63.05, -0.30, delta=0.011)
-
-    def test_kimi3_json_is_exact_match(self):
-        data = aa_index.load_model_json(REPO_ROOT / "examples" / "kimi-k3.json")
-        row = {k: "" if v is None else str(v) for k, v in data.items()}
-        components = aa_index.model_row_to_components(row)
-        index, _ = aa_index.reconstruct_index(components, self.weights)
-        self.assertAlmostEqual(index, 59.70, delta=0.011)
+    def test_legacy_examples_still_reconstruct(self):
+        for name, published, target in [
+            ("claude-opus-5.json", 63.05, 62.75),
+            ("kimi-k3.json", 59.70, 59.70),
+        ]:
+            data = aa_index.load_model_json(REPO_ROOT / "examples" / name)
+            row = {k: "" if v is None else str(v) for k, v in data.items()}
+            components = aa_index.model_row_to_components(row)
+            index, _ = aa_index.reconstruct_index(components, self.weights)
+            self.assertAlmostEqual(index, target, delta=0.011)
 
 
 if __name__ == "__main__":
