@@ -273,7 +273,7 @@ def build_parser() -> argparse.ArgumentParser:
         "--model",
         metavar="NAME_OR_JSON",
         help=(
-            'either a model name from data/models.csv (e.g. "Kimi K3") '
+            "either a model name from the models CSV "
             "or a path to a JSON file with component scores "
             "(see examples/ for the format)"
         ),
