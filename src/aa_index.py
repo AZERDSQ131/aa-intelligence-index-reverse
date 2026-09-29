@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Reconstruct the Artificial Analysis Intelligence Index from public component scores.
 
-Formula (methodology v4.1.1, published by Artificial Analysis):
+Formula (methodology v4.3.2, published by Artificial Analysis):
 
     Index = 100 * sum_i (w_i * s_i),   with sum(w_i) = 1 and s_i in [0, 1]
 
