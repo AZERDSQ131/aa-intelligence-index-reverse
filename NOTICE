@@ -61,9 +61,9 @@ related benchmark names are the property of their respective owners.
 
 5. Known limits (do not oversell the result)
 --------------------------------------------
-- The reconstruction was validated ONLY on the v4.1.1 Index band ~56-63
-  (8 models, max |Delta| 0.30). The v4.3.2 weights + calculator have NO
-  completed public-dump validation yet — that is the top roadmap item.
+- The v4.3.2 reconstruction is validated on 29 live models, Index ~14-58
+  (max |Delta| 0.12, 2026-09-29). The v4.1.1 archive was validated ONLY on
+  the band ~56-63 (8 models, max |Delta| 0.30).
 - All deltas are <= 0, consistent with rounding noise in the public
   component scores, not with a structural formula error.
 - The Elo <-> model-variant mapping (e.g. "Grok 4.6 (high)") was done by
