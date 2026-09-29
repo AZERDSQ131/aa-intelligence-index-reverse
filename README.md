@@ -161,7 +161,7 @@ Operative category masses: **Agents 34 · Scientific 32 · Coding 16 · General 
 not match the operative per-component weights — details in
 [docs/methodology.md](docs/methodology.md).)
 
-> The AA FAQ's older "4 pillars × 25%" description is **outdated**; the v4.1.1
+> The AA FAQ's older "4 pillars × 25%" description is **outdated**; the v4.3.2
 > methodology table is authoritative.
 
 ## Testing
