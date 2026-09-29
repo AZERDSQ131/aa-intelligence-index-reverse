@@ -194,10 +194,12 @@ pour que :
 
 ## Feuille de route
 
-- [ ] **v0.2 — validation hors bande** : ajouter ≥ 1 modèle d'Index ~30 avec
-  les 10 composantes (la contribution la plus utile en ce moment).
-- [ ] Fichiers de données pour d'autres modèles trackés.
-- [ ] Un switch `--weights` quand AA publiera une v4.2.
+- [ ] **v0.2 — premier dump v4.3.2** : ajouter ≥ 1 modèle avec les **11 composantes**
+  + Index + URL + date (la contribution la plus utile en ce moment ; un mismatch
+  est bienvenu aussi — il falsifie l'extrapolation).
+- [ ] Fichiers de données pour d'autres modèles trackés (schéma v4.3.2).
+- [x] ~~Un switch `--weights` quand AA publiera une v4.2~~ — fait : flags `--weights` /
+  `--models`, v4.3.2 par défaut, v4.1.1 archivée.
 
 ## Contribuer
 
