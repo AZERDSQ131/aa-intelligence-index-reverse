@@ -32,7 +32,7 @@ from pathlib import Path
 # Constants
 # --------------------------------------------------------------------------
 
-WEIGHTS_VERSION = "v4.1.1"
+WEIGHTS_VERSION = "v4.3.2"
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_WEIGHTS_CSV = REPO_ROOT / "data" / "weights_v4.3.2.csv"
