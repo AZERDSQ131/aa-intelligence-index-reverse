@@ -138,9 +138,6 @@ une PR (voir [CONTRIBUTING.md](CONTRIBUTING.md)).
 ```
 aa-intelligence-index-reverse/
 ├── README.md                  ← version anglaise
-Les dumps v4.1.1 (`examples/claude-opus-5.json`, `examples/kimi-k3.json`)
-fonctionnent toujours avec `--weights data/weights_v4.1.1.csv --models data/models.csv`.
-
 ├── README.fr.md               ← tu es ici (français)
 ├── LICENSE                    MIT + notice de provenance des données
 ├── NOTICE                     non-affiliation, provenance, limites connues
