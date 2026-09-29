@@ -25,6 +25,7 @@ one rule is: **source or it didn't happen.**
 
 5. Open a PR titled `Add <model name> (<variant>) [v4.3.2]` with the URL + date in
    the description.
+   python src/aa_index.py --model "<your model>"
 
 **Priority:** the first complete 11-component dump — any model. A mismatch is
 welcome too: it falsifies the extrapolation and will be documented in
