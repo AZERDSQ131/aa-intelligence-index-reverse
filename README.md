@@ -97,6 +97,7 @@ during the original analysis differ by ≤ 0.02; see [docs/methodology.md](docs/
 
 | | |
 |---|---|
+| ✅ **Validated** | Formula + weights **v4.3.2** on **29 models, Index ~14–58** (max \|Δ\| 0.12, incl. out-of-band) |
 | ✅ **Validated (archive)** | Formula + weights v4.1.1 on the **Index band ~56–63** (8 models, max \|Δ\| 0.30) |
 | ❌ **Out of scope** | Speed and cost: they are **separate axes** on AA, not part of the Index |
 
