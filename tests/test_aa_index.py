@@ -130,8 +130,6 @@ class TestVerification(unittest.TestCase):
             )
 
     def test_max_abs_delta_is_030(self):
-        # Exact recomputation gives max |Delta| = 0.30 (Opus 5);
-        # the bilan hand-recorded 0.31 (intermediate rounding, see above).
         deltas = []
         for row in self.rows:
             components = aa_index.model_row_to_components(row)
