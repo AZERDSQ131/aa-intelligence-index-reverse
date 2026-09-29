@@ -89,7 +89,7 @@ def load_weights(path: Path = DEFAULT_WEIGHTS_CSV) -> dict[str, float]:
     if abs(total - 1.0) > 1e-6:
         raise ValueError(
             f"Weights must sum to 1.0, got {total:.6f} (from {path}). "
-            "Check data/weights_v4.1.1.csv against the methodology page."
+            "Check the weights CSV against the methodology page."
         )
     return weights
 
