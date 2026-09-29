@@ -164,7 +164,9 @@ Coding/Scientific comme 24/24 ; ces libellés ne correspondent pas aux poids
 opérants — détails dans [docs/methodology.md](docs/methodology.md).)
 
 > L'ancienne description « 4 piliers × 25% » de la FAQ AA est **périmée** ;
-> la table méthodo v4.1.1 fait foi.
+> la table méthodo v4.3.2 fait foi.
+
+</details>
 
 ## Tests
 
