@@ -2,7 +2,7 @@
 
 Une **reconstruction indépendante et communautaire** de la formule de score de
 l'[Artificial Analysis Intelligence Index](https://artificialanalysis.ai/methodology/intelligence-benchmarking)
-(méthodologie v4.1.1) — avec le code et les données pour **la vérifier
+(méthodologie v4.3.2 — v4.1.1 conservée en archive) — avec le code et les données pour **la vérifier
 toi-même en moins d'une minute**.
 
 > **Non affilié à Artificial Analysis.** Poids © Artificial Analysis (CC BY 4.0) ;
