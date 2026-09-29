@@ -55,8 +55,8 @@ No dependencies. Python ≥ 3.9.
 # 1. Verify all 8 models against the published Index
 python src/aa_index.py --all
 
-# 2. Full per-component breakdown for one model (from data/models.csv)
-python src/aa_index.py --model "Kimi K3"
+# 2. Archived v4.1.1 verification (8 models, still green)
+python src/aa_index.py --all --weights data/weights_v4.1.1.csv --models data/models.csv
 
 # 3. Full per-component breakdown for one archived model
 python src/aa_index.py --model "Kimi K3" --weights data/weights_v4.1.1.csv --models data/models.csv
