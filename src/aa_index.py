@@ -88,20 +88,6 @@ def clamp01(value: float) -> float:
     return max(0.0, min(1.0, value))
 
 
-    "automationbench_aa": "AutomationBench-AA",
-    "terminal_bench_40": "Terminal-Bench 4.0",
-    "hle": "HLE",
-    "omniscience_accuracy": "Omniscience Accuracy",
-    "omniscience_non_hallu": "Omniscience Non-hallu",
-    "scicode": "SciCode",
-    "critpt": "CritPt",
-    "gdp_pdf": "GDP.pdf",
-    "aa_lcr_11": "AA-LCR v1.1",
-}
-
-# Legacy v4.1.1 columns, still accepted so --weights v4.1.1 keeps working.
-# (Merged into model_row_to_components via ELO handling + this map.)
-LEGACY_COLUMN_TO_COMPONENT = {
 def elo_normalize(elo: float) -> float:
     """Convert an Elo rating (Briefcase v1.1 or GDPval-AA v2.1) into s in [0, 1].
 
