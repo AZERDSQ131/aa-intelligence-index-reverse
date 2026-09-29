@@ -59,8 +59,8 @@ If AA ships new weights (v4.2, v5…):
 
 ## PR checklist
 
-- [ ] Every new data row carries a source URL and a dump date
-- [ ] `python src/aa_index.py --all` output included in the PR description
+- [ ] Every new data row carries a source URL and a dump date (v4.3.2 rows: `source` + `dump_date`)
+- [ ] `python src/aa_index.py --all` (+ archived v4.1.1 `--all` if touched) output included in the PR description
 - [ ] Tests pass locally
 - [ ] No scraped raw HTML, no paywalled or private data — public chart
       readings only
