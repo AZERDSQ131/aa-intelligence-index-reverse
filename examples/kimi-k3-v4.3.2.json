@@ -1,0 +1,18 @@
+{
+  "model": "Kimi K3",
+  "variant": "max",
+  "source": "https://artificialanalysis.ai/models \u2014 page-data dump 2026-09-29 (public Index page payload)",
+  "dump_date": "2026-09-29",
+  "elo_briefcase": 1505.22,
+  "elo_gdpval": 1523.97,
+  "automationbench_aa": 0.58273,
+  "terminal_bench_40": 0.126263,
+  "scicode": 0.594907,
+  "omniscience_accuracy": 0.475833,
+  "omniscience_non_hallu": 0.468045,
+  "gdp_pdf": 0.22,
+  "aa_lcr_11": 0.886667,
+  "hle": 0.468953,
+  "critpt": 0.234286,
+  "published_index_aa": 43.59
+}
