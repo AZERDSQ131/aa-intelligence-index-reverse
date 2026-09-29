@@ -79,14 +79,51 @@ class TestDataFiles(unittest.TestCase):
         self.assertAlmostEqual(categories["Scientific"], 0.32, places=6)
         self.assertAlmostEqual(categories["General"], 0.18, places=6)
 
-    def test_matrix_has_8_models_with_all_components(self):
-        self.assertEqual(len(self.rows), 8)
-        for row in self.rows:
-            components = aa_index.model_row_to_components(row)
-            self.assertEqual(
-                set(components), set(self.weights),
-                f"{row['model']}: missing components",
-            )
+    def test_expected_weights(self):
+        expected = {
+            "AA-Briefcase v1.1": 0.15,
+            "GDPval-AA v2.1": 0.10,
+            "AutomationBench-AA": 0.05,
+            "Terminal-Bench 4.0": 0.10,
+            "SciCode": 0.10,
+            "Omniscience Accuracy": 0.10,
+            "Omniscience Non-hallu": 0.05,
+            "GDP.pdf": 0.10,
+            "AA-LCR v1.1": 0.05,
+            "HLE": 0.10,
+            "CritPt": 0.10,
+        }
+        self.assertEqual(self.weights, expected)
+
+    def test_models_matrix_schema(self):
+        # The v4.3.2 matrix exists and carries the new columns (no rows yet).
+        with open(MODELS_432, newline="") as f:
+            header = next(csv.reader(f))
+        for col in [
+            "elo_briefcase", "elo_gdpval", "automationbench_aa",
+            "terminal_bench_40", "gdp_pdf", "aa_lcr_11",
+        ]:
+            self.assertIn(col, header)
+        rows = aa_index.load_models(MODELS_432)
+        self.assertIsInstance(rows, list)
+
+    def test_template_json_reconstructs(self):
+        data = aa_index.load_model_json(REPO_ROOT / "examples" / "v4.3.2-template.json")
+        row = {k: "" if v is None else str(v) for k, v in data.items()}
+        if "index_aa" not in row and data.get("published_index_aa") is not None:
+            row["index_aa"] = str(data["published_index_aa"])
+        components = aa_index.model_row_to_components(row)
+        index, contributions = aa_index.reconstruct_index(components, self.weights)
+        # All s = 0.5 except Elos: briefcase 1000 -> 0.25, gdpval 1600 -> 0.55.
+        # 100 * (0.15*0.25 + 0.10*0.55 + 0.75*0.5) = 46.75
+        self.assertAlmostEqual(index, 46.75, places=6)
+        self.assertAlmostEqual(sum(contributions.values()), index)
+
+    def test_json_output_empty_matrix(self):
+        payload = json.loads(aa_index.to_json([], self.weights))
+        self.assertEqual(payload["weights_version"], "v4.3.2")
+        self.assertEqual(payload["models"], [])
+        self.assertEqual(payload["max_abs_delta"], 0.0)
 
 
 class TestLegacy411Archive(unittest.TestCase):
