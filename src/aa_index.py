@@ -43,7 +43,7 @@ GDPVAL_COMPONENT = "GDPval-AA"
 GDPVAL_OFFSET = 500.0
 GDPVAL_SCALE = 2000.0
 
-# Mapping: column name in data/models.csv -> component name in weights CSV.
+# Mapping: column name in data/models_v4.3.2.csv -> component name in weights CSV.
 # Order matters for display only; the math is a plain weighted sum.
 COLUMN_TO_COMPONENT = {
     "terminal_bench_21": "Terminal-Bench 2.1",
