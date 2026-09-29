@@ -42,7 +42,8 @@ enregistrées pendant l'analyse diffèrent de ≤ 0.02 ; voir
 
 | | |
 |---|---|
-| ✅ **Validé** | Formule + poids v4.1.1 sur la **bande Index ~56–63** (8 modèles, max \|Δ\| 0.30) |
+| ✅ **Validé (archive)** | Formule + poids v4.1.1 sur la **bande Index ~56–63** (8 modèles, max \|Δ\| 0.30) |
+| 🆕 **En cours** | Poids + calculateur **v4.3.2** (11 composantes) ; premier dump public complet encore attendu |
 | ❌ **Pas encore** | Modèles **hors bande** (ex. Index ~30) — dumps de composantes indisponibles au moment de l'analyse |
 | ❌ **Hors scope** | Vitesse et coût : axes **séparés** sur AA, ils n'entrent pas dans l'Index |
 
