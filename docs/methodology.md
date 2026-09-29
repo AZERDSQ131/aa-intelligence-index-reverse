@@ -34,24 +34,34 @@ Terminal-Bench 4.0 (10%) + SciCode held at 10%; τ³-Banking (14%) retired to
 additional evals; GPQA (6%) retired in v4.2; AA-LCR (6%) → AA-LCR v1.1 (5%);
 HLE 12% → 10%; CritPt held at 10%; Omniscience 8+4 → 10+5; new GDP.pdf 10%.
 
-### Open point: GDP.pdf metric
+### Metric choices confirmed by reproduction
 
-AA reports two GDP.pdf numbers: headline **All-pass** (share of the 500
-attempts where *every* criterion passes) and secondary task-macro **Mean
-Pass** (mean criterion pass rate). The weights table lists both. This
-reconstruction takes **All-pass** as `s` — it is the headline metric and the
-closest analogue of pass@1 (an attempt counts iff fully correct). If a future
-reproduction shows Mean Pass fits better, the weights note + code will be
-updated and the change recorded here. Flag it in your PR if you test this.
+Two headline-metric choices were ambiguous from the methodology text alone
+and are settled empirically (29-model reproduction, max |Δ| = 0.12):
 
-### Validation status v4.3.2
+- **GDP.pdf → All-pass.** AA reports headline **All-pass** (share of the 500
+  attempts where *every* criterion passes) and secondary task-macro **Mean
+  Pass**. This reconstruction takes **All-pass** as `s` — headline metric
+  and closest analogue of pass@1. Mean Pass (typically ~0.8) would overshoot
+  the published Index by several points; All-pass reproduces it.
+- **AutomationBench-AA → partial score.** The payload exposes `strictScore`
+  (share of fully-passing tasks), `completion` (mean objective completion,
+  guardrails ignored) and `automationBenchPartialScore` (mean objectives,
+  0 on guardrail violation / error) — the last matches the methodology's
+  headline definition and reproduces the Index; the other two do not.
 
-No complete public component dump exists in this repo yet
-(`data/models_v4.3.2.csv` is header-only). The calculator, weights file,
-template (`examples/v4.3.2-template.json`, reconstructs 46.75 on all-0.5
-inputs) and tests (20) are in place; the next step is ≥ 1 full 11-component
-dump with Index + URL + date (see CONTRIBUTING.md). A mismatch is welcome
-too — it falsifies the extrapolation and will be documented here.
+### Validation status v4.3.2 — validated 2026-09-29
+
+29 live (non-deprecated) models dumped from the public Index page payload on
+2026-09-29 (`data/models_v4.3.2.csv`, source URL in every row) reproduce the
+published Index from Index ~14 (Mistral Medium 3.5) to ~58 (Claude Opus 5.5)
+with **max |Δ| = 0.12** (Qwen3.8 Max, GLM-5.3; most rows ≤ 0.06, many exact).
+This simultaneously validates the formula, both Elo mappings, the
+Omniscience 10/5 split, and the GDP.pdf / AutomationBench headline choices —
+*including* the out-of-band low-Index regime the v4.1.1 work could not reach.
+Three `deprecated: true` payload entries (Claude Opus 5, GPT-5.6 Sol,
+GPT-5.6 Luna) are excluded from the matrix; the v4.1.1 archive keeps its own
+8-model evidence below.
 
 This document is the full derivation behind the reconstruction. It records
 what the formula is, where each number comes from, and every discrepancy we
