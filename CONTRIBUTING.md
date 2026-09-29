@@ -36,7 +36,7 @@ one rule is: **source or it didn't happen.**
 welcome too: it falsifies the extrapolation and will be documented in
 `docs/methodology.md`.
 
-## Priority: first v4.3.2 validation
+## Priority: keep the v4.3.2 matrix fresh
 
 The seed dump covers 29 models at 2026-09-29. The most useful PRs now: refresh
 rows when AA publishes new models or re-runs benchmarks (one row per model,
