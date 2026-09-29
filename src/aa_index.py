@@ -239,7 +239,7 @@ def to_json(rows: list[dict[str, str]], weights: dict[str, float]) -> str:
                 "dump_date": row.get("dump_date", ""),
             }
         )
-    max_abs_delta = max(abs(r["delta"]) for r in results)
+    max_abs_delta = max((abs(r["delta"]) for r in results), default=0.0)
     return json.dumps(
         {
             "weights_version": WEIGHTS_VERSION,
