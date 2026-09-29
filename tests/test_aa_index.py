@@ -27,6 +27,7 @@ LEGACY_MODELS = REPO_ROOT / "data" / "models.csv"
 WEIGHTS_432 = REPO_ROOT / "data" / "weights_v4.3.2.csv"
 MODELS_432 = REPO_ROOT / "data" / "models_v4.3.2.csv"
 
+
 class TestCoreMath(unittest.TestCase):
     def test_clamp01(self):
         self.assertEqual(aa_index.clamp01(-0.5), 0.0)
