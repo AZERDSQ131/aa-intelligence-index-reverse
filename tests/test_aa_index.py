@@ -48,7 +48,7 @@ class TestCoreMath(unittest.TestCase):
             aa_index.reconstruct_index({"A": 0.5}, {"A": 0.5, "B": 0.5})
 
 
-class TestDataFiles(unittest.TestCase):
+class TestWeights432(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.weights = aa_index.load_weights(WEIGHTS_432)
