@@ -250,9 +250,9 @@ def print_summary(rows: list[dict[str, str]], weights: dict[str, float]) -> None
               " --weights data/weights_v4.1.1.csv --models data/models.csv")
         return
     print(f"Reconstructed AA Intelligence Index — weights {WEIGHTS_VERSION}")
-    print("-" * 78)
-    print(f"{'Model':<26}{'Reconstr.':>10}{'AA publ.':>10}{'Delta':>8}{'|Delta|':>9}")
-    print("-" * 78)
+    print("-" * 88)
+    print(f"{'Model':<36}{'Reconstr.':>10}{'AA publ.':>10}{'Delta':>8}{'|Delta|':>9}")
+    print("-" * 88)
 
     deltas: list[float] = []
     for row in rows:
