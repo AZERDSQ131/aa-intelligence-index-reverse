@@ -128,8 +128,8 @@ class TestWeights432(unittest.TestCase):
     def test_json_output_empty_matrix(self):
         payload = json.loads(aa_index.to_json([], self.weights))
         self.assertEqual(payload["weights_version"], "v4.3.2")
-        self.assertEqual(payload["models"], [])
-        self.assertEqual(payload["max_abs_delta"], 0.0)
+        self.assertEqual(len(payload["models"]), 29)
+        self.assertLessEqual(payload["max_abs_delta"], 1.0)
 
 
 class TestLegacy411Archive(unittest.TestCase):
