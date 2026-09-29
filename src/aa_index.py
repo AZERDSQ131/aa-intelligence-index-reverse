@@ -67,8 +67,8 @@ def clamp01(value: float) -> float:
     return max(0.0, min(1.0, value))
 
 
-def gdpval_normalize(elo: float) -> float:
-    """Convert a GDPval-AA Elo rating into an s in [0, 1].
+def elo_normalize(elo: float) -> float:
+    """Convert an Elo rating (Briefcase v1.1 or GDPval-AA v2.1) into s in [0, 1].
 
     Example: an Elo of 1600 gives s = (1600 - 500) / 2000 = 0.55.
     """
