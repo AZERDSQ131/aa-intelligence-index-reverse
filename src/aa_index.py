@@ -137,7 +137,7 @@ def reconstruct_index(
 # --------------------------------------------------------------------------
 
 def load_models(path: Path = DEFAULT_MODELS_CSV) -> list[dict[str, str]]:
-    """Load the model matrix from data/models.csv."""
+    """Load the model matrix from a models CSV."""
     with open(path, newline="", encoding="utf-8") as handle:
         return list(csv.DictReader(handle))
 
