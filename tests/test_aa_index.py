@@ -61,13 +61,8 @@ class TestDataFiles(unittest.TestCase):
         self.assertEqual(len(self.weights), 10)
 
     def test_category_mass(self):
-        # Operative masses of the formula that reproduces the Index:
-        # Agents 34, Coding 16, Scientific 32, General 18 (= 100).
-        # NOTE: some AA summary materials annotate Coding/Scientific as 24/24;
-        # those labels do not match the operative per-component weights and
-        # appear to be v4.0 leftovers. See docs/methodology.md.
-        import csv
-
+        # Operative masses v4.3.2: Agents 30, Coding 20, General 30,
+        # Scientific Reasoning 20 (= 100).
         categories = {}
         with open(WEIGHTS_432, newline="") as f:
             for row in csv.DictReader(f):
