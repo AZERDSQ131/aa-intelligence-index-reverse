@@ -205,6 +205,8 @@ carry the AA dump URL and date. See [CONTRIBUTING.md](CONTRIBUTING.md).
 ## Citing
 
 See [CITATION.cff](CITATION.cff), or:
+</details>
+
 
 ```bibtex
 @software{jules_2026_aa_index_reverse,
