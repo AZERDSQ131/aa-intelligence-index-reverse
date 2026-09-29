@@ -63,7 +63,10 @@ python src/aa_index.py --model "Kimi K3"
 # 3. Calculer l'Index depuis ton propre dump JSON
 python src/aa_index.py --model examples/claude-opus-5.json
 
-# 4. Sortie lisible par machine
+# 4. Calculer l'Index depuis ton propre dump JSON v4.3.2
+python src/aa_index.py --model examples/v4.3.2-template.json
+
+# 5. Sortie lisible par machine
 python src/aa_index.py --all --json
 ```
 
