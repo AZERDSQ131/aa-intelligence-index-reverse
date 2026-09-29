@@ -26,9 +26,19 @@ one rule is: **source or it didn't happen.**
 5. Open a PR titled `Add <model name> (<variant>)` with the URL + date in
    the description.
 
-**Priority models:** anything **outside the 56–63 band** — especially around
-Index ~30 — see the roadmap. An out-of-band match extends validation more
-than ten in-band models would.
+**Priority:** the first complete 11-component dump — any model. A mismatch is
+welcome too: it falsifies the extrapolation and will be documented in
+`docs/methodology.md`.
+
+## Priority: first v4.3.2 validation
+
+The v4.3.2 weights + calculator ship without a single full public dump yet.
+The first PR that adds a complete 11-component row (any Index band) is the
+single most valuable contribution right now. Note: if it does **not** match,
+that is still a valuable PR — it falsifies the extrapolation and we will
+document it in `docs/methodology.md`.
+
+## Archived v4.1.1 data (frozen)
 
 `data/models.csv`, `data/weights_v4.1.1.csv` and `examples/claude-opus-5.json` /
 `examples/kimi-k3.json` reproduce the 8-model band ~56–63 and must not be
