@@ -141,7 +141,8 @@ class TestVerification(unittest.TestCase):
 
     def test_json_output_shape(self):
         payload = json.loads(aa_index.to_json(self.rows, self.weights))
-        self.assertEqual(payload["weights_version"], "v4.1.1")
+        # to_json stamps the *code* version, not the weights file version.
+        self.assertEqual(payload["weights_version"], "v4.3.2")
         self.assertEqual(len(payload["models"]), 8)
 
     def test_legacy_examples_still_reconstruct(self):
