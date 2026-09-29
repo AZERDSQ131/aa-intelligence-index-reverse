@@ -11,8 +11,8 @@ An independent, community reconstruction of the scoring formula behind the
 - a machine-readable weights table (`data/weights_v4.1.1.csv`)
 - a machine-readable matrix of public component scores (`data/models.csv`)
 - a small, dependency-free calculator (`src/aa_index.py`)
-- a worked example reproducing the published Index of 8 models to within
-  |Delta| <= 0.31 (see `examples/` and the README)
+- a worked example reproducing the published v4.1.1 Index of 8 models to within
+  |Delta| <= 0.30 (see `examples/` and the README)
 
 2. Non-affiliation
 ------------------
