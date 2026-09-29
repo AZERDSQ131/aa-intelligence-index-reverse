@@ -6,7 +6,9 @@ one rule is: **source or it didn't happen.**
 ## Adding a model (the most useful contribution)
 
 > **v4.3.2 schema (current).** New rows go to [`data/models_v4.3.2.csv`](data/models_v4.3.2.csv)
-> with the 11 columns in `examples/v4.3.2-template.json`. The v4.1.1 matrix
+> with the 11 columns in `examples/v4.3.2-template.json`. Seed dump (29 models,
+> 2026-09-29, max |Δ| 0.12) came from the public Index-page payload; refresh it
+> the same way when AA adds models. The v4.1.1 matrix
 > (`data/models.csv`, 8 models) is frozen — do not append v4.1.1 rows.
 
 1. Get the 11 component scores from the publicly displayed charts on
