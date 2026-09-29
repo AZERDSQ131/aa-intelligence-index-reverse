@@ -67,7 +67,7 @@ python src/aa_index.py --all --json
 
 ### Example: a worked component breakdown
 
-`python src/aa_index.py --model examples/kimi-k3.json` prints the full
+`python src/aa_index.py --model examples/kimi-k3.json --weights data/weights_v4.1.1.csv --models data/models.csv` prints the full
 contribution of each benchmark:
 
 ```
