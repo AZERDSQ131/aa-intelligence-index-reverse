@@ -213,7 +213,7 @@ Voir [CITATION.cff](CITATION.cff), ou :
 @software{jules_2026_aa_index_reverse,
   author  = {Jules},
   title   = {aa-intelligence-index-reverse: reconstruction indépendante de la
-             formule de l'Artificial Analysis Intelligence Index (v4.1.1)},
+             formule de l'Artificial Analysis Intelligence Index (v4.3.2, v4.1.1 archivée)},
   year    = {2026},
   url     = {https://github.com/AZERDSQ131/aa-intelligence-index-reverse}
 }
