@@ -267,7 +267,7 @@ def print_summary(rows: list[dict[str, str]], weights: dict[str, float]) -> None
             f"{delta:>8.2f}{abs(delta):>9.2f}{flag}"
         )
 
-    print("-" * 78)
+    print("-" * 88)
     print(
         f"{len(rows)} models · max |Delta| = {max(abs(d) for d in deltas):.2f}"
         " · internal lock threshold = 1.00"
