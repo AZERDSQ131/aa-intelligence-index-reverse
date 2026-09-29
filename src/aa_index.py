@@ -38,7 +38,18 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_WEIGHTS_CSV = REPO_ROOT / "data" / "weights_v4.1.1.csv"
 DEFAULT_MODELS_CSV = REPO_ROOT / "data" / "models.csv"
 
-# GDPval-AA normalization: s = clamp((Elo - 500) / 2000, 0, 1)
+# Archived v4.1.1 files (kept for reproducibility; see docs/methodology.md).
+LEGACY_WEIGHTS_CSV = REPO_ROOT / "data" / "weights_v4.1.1.csv"
+LEGACY_MODELS_CSV = REPO_ROOT / "data" / "models.csv"
+
+# Elo normalization shared by both Elo components in v4.3.2:
+# s = clamp((Elo - 500) / 2000, 0, 1)
+ELO_OFFSET = 500.0
+ELO_SCALE = 2000.0
+
+# Backwards-compatible aliases (v4.1.1 spelled it GDPval-AA).
+GDPVAL_OFFSET = ELO_OFFSET
+GDPVAL_SCALE = ELO_SCALE
 GDPVAL_COMPONENT = "GDPval-AA"
 BRIEFCASE_COMPONENT = "AA-Briefcase v1.1"
 GDPVAL_V21_COMPONENT = "GDPval-AA v2.1"
