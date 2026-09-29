@@ -38,11 +38,10 @@ welcome too: it falsifies the extrapolation and will be documented in
 
 ## Priority: first v4.3.2 validation
 
-The v4.3.2 weights + calculator ship without a single full public dump yet.
-The first PR that adds a complete 11-component row (any Index band) is the
-single most valuable contribution right now. Note: if it does **not** match,
-that is still a valuable PR — it falsifies the extrapolation and we will
-document it in `docs/methodology.md`.
+The seed dump covers 29 models at 2026-09-29. The most useful PRs now: refresh
+rows when AA publishes new models or re-runs benchmarks (one row per model,
+URL + date in `source`/`dump_date`). A mismatch is welcome too — it falsifies
+the extrapolation and will be documented in `docs/methodology.md`.
 
 ## Archived v4.1.1 data (frozen)
 
