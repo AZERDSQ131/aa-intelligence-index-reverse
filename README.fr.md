@@ -66,8 +66,8 @@ Aucune dépendance. Python ≥ 3.9.
 # 1. Statut v4.3.2 (matrice vide jusqu'au premier dump public)
 python src/aa_index.py --all
 
-# 2. Vérification archivée v4.1.1 (8 modèles, toujours verte)
-python src/aa_index.py --all --weights data/weights_v4.1.1.csv --models data/models.csv
+# 2. Décomposition complète composante par composante
+python src/aa_index.py --model "Kimi K3"
 
 # 3. Vérification archivée v4.1.1 (8 modèles, toujours verte)
 python src/aa_index.py --all --weights data/weights_v4.1.1.csv --models data/models.csv
