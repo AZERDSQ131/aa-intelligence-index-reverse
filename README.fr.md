@@ -92,6 +92,7 @@ Gemini 3.7 Flash               55.94     56.03   -0.09     0.09
 enregistrées pendant l'analyse diffèrent de ≤ 0.02 ; voir
 [docs/methodology.md](docs/methodology.md).)*
 
+</details>
 ## Ce qui est validé — et ce qui ne l'est pas
 
 | | |
