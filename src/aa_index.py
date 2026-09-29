@@ -25,6 +25,7 @@ Usage:
     python src/aa_index.py --all
     python src/aa_index.py --model examples/v4.3.2-template.json
     python src/aa_index.py --all --json
+    python src/aa_index.py --all --weights data/weights_v4.1.1.csv --models data/models.csv
 
 No third-party dependencies: standard library only (Python >= 3.9).
 """
