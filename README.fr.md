@@ -10,7 +10,7 @@ toi-même en moins d'une minute**.
 
 ---
 
-## Le résultat, en un tableau
+## Le résultat, en un tableau (ARCHIVE — v4.1.1)
 
 `Index = 100 × Σ (wᵢ × sᵢ)` sur 10 composantes, avec l'Elo GDPval-AA normalisé
 par `s = clamp((Elo − 500) / 2000)`.
