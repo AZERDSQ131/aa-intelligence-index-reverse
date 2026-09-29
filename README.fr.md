@@ -92,7 +92,8 @@ Delta (reconstr - AA)                             0.00
 ```
 
 Kimi K3 est un **match exact** — bon test de sanité que la formule et la
-normalisation Elo GDPval sont correctes.
+normalisation Elo GDPval sont correctes. (Exemple v4.1.1 archivé ; les dumps
+v4.3.2 utilisent `examples/v4.3.2-template.json`.)
 
 ### Exemple : calculer depuis ton propre dump JSON
 
