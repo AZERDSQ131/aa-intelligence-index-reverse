@@ -232,6 +232,7 @@ aa-intelligence-index-reverse/
 │   └── test_aa_index.py       23 tests : formule, matrice v4.3.2, archive v4.1.1
 ├── examples/                  dumps JSON prêts à l'emploi
 │   ├── v4.3.2-template.json
+│   ├── kimi-k3-v4.3.2.json    (vrai dump v4.3.2 : Kimi K3, Δ −0,04)
 │   ├── claude-opus-5.json     (archive v4.1.1)
 │   └── kimi-k3.json           (archive v4.1.1)
 └── docs/
