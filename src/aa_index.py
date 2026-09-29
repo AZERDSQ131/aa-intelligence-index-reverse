@@ -145,7 +145,7 @@ def load_models(path: Path = DEFAULT_MODELS_CSV) -> list[dict[str, str]]:
 def load_model_json(path: Path) -> dict[str, float]:
     """Load a single model's component scores from a JSON file.
 
-    Accepted format (see examples/claude-opus-5.json):
+    Accepted format (see examples/v4.3.2-template.json):
 
         {
           "model": "Example Model",
