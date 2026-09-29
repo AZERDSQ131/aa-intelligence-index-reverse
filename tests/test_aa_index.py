@@ -111,7 +111,12 @@ class TestWeights432(unittest.TestCase):
         ]:
             self.assertIn(col, header)
         rows = aa_index.load_models(MODELS_432)
-        self.assertIsInstance(rows, list)
+        self.assertEqual(len(rows), 29)
+        weights = aa_index.load_weights(WEIGHTS_432)
+        for row in rows:
+            components = aa_index.model_row_to_components(row)
+            for component in weights:
+                self.assertIn(component, components, f"{row['model']}: missing {component}")
 
     def test_template_json_reconstructs(self):
         data = aa_index.load_model_json(REPO_ROOT / "examples" / "v4.3.2-template.json")
