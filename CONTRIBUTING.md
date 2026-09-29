@@ -7,7 +7,8 @@ one rule is: **source or it didn't happen.**
 
 1. Get the 10 component scores from the publicly displayed charts on
    [artificialanalysis.ai](https://artificialanalysis.ai/models)
-   (the model's page shows each benchmark score; GDPval-AA is an Elo).
+   (the model's page shows each benchmark score; AA-Briefcase v1.1 and
+   GDPval-AA v2.1 are Elo ratings).
 2. Note the **date** of your reading and the **URL** of the model page.
 3. Add **one row** to [`data/models_v4.3.2.csv`](data/models_v4.3.2.csv):
    - `elo_briefcase`: the AA-Briefcase v1.1 Elo — the calculator normalizes it;
