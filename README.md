@@ -307,8 +307,6 @@ not an Index calculator). This repo fills that gap so that:
 - researchers can propagate new component dumps into the Index immediately;
 - methodology changes (AA re-weights periodically) can be tracked as
   versioned weights files (`weights_v4.x.y.csv`).
-│   ├── kimi-k3-v4.3.2.json    (real v4.3.2 dump: Kimi K3, Δ −0.04)
-│   ├── kimi-k3-v4.3.2.json    (real v4.3.2 dump: Kimi K3, Δ −0.04)
 
 ## Roadmap
 
