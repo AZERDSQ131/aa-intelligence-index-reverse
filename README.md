@@ -67,8 +67,8 @@ python src/aa_index.py --all
 # 2. Archived v4.1.1 verification (8 models, still green)
 python src/aa_index.py --all --weights data/weights_v4.1.1.csv --models data/models.csv
 
-# 3. Full per-component breakdown for one archived model
-python src/aa_index.py --model "Kimi K3" --weights data/weights_v4.1.1.csv --models data/models.csv
+# 3. Archived v4.1.1 verification (8 models, still green)
+python src/aa_index.py --all --weights data/weights_v4.1.1.csv --models data/models.csv
 
 # 4. Compute the Index from your own v4.3.2 component dump (JSON)
 python src/aa_index.py --model examples/kimi-k3-v4.3.2.json
