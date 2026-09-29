@@ -172,9 +172,9 @@ opérants — détails dans [docs/methodology.md](docs/methodology.md).)
 python -m unittest discover -s tests -v
 ```
 
-14 tests couvrent les ancres de normalisation GDPval, la somme des poids et
-les masses de catégories, et — surtout — la **reproduction de l'Index publié
-pour les 8 modèles**. La CI exécute la même suite à chaque push
+20 tests couvrent les ancres de normalisation Elo (les deux composantes v4.3.2), la somme des poids et
+les masses de catégories, la reconstruction du template (46.75) et — gelée — la **reproduction de l'Index publié
+pour les 8 modèles archivés**. La CI exécute la même suite à chaque push
 ([.github/workflows/ci.yml](.github/workflows/ci.yml)).
 
 ## Pourquoi ce dépôt existe
