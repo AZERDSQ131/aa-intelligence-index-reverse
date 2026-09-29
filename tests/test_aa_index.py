@@ -89,8 +89,8 @@ class TestDataFiles(unittest.TestCase):
             )
 
 
-class TestVerification(unittest.TestCase):
-    """The core claim: max |Delta| <= 1.0 on the 8-model band 56-63."""
+class TestLegacy411Archive(unittest.TestCase):
+    """The v4.1.1 reproduction is frozen, not deleted."""
 
     @classmethod
     def setUpClass(cls):
