@@ -57,8 +57,8 @@ Aucune dépendance. Python ≥ 3.9.
 # 1. Vérifier les 8 modèles contre l'Index publié
 python src/aa_index.py --all
 
-# 2. Décomposition complète composante par composante (depuis data/models.csv)
-python src/aa_index.py --model "Kimi K3"
+# 2. Vérification archivée v4.1.1 (8 modèles, toujours verte)
+python src/aa_index.py --all --weights data/weights_v4.1.1.csv --models data/models.csv
 
 # 3. Décomposition complète (modèle archivé, depuis data/models.csv)
 python src/aa_index.py --model "Kimi K3" --weights data/weights_v4.1.1.csv --models data/models.csv
