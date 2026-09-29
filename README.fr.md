@@ -16,8 +16,11 @@ toi-même en moins d'une minute**.
 par `s = clamp((Elo − 500) / 2000)`.
 
 Recalculer l'Index à partir des **scores de composantes affichés publiquement**
-reproduit la valeur publiée pour les 8 modèles testés, dans la marge de
-lecture des charts :
+a reproduit la valeur publiée pour les 8 modèles testés, dans la marge de
+lecture des charts. La formule v4.3.2 est la même moyenne pondérée sur **11
+composantes**, avec la même normalisation Elo `clamp((Elo − 500) / 2000)`
+appliquée à **deux** Elo (AA-Briefcase v1.1 + GDPval-AA v2.1) — voir
+[docs/methodology.md](docs/methodology.md) §0.
 
 ```
 Model                      Reconstr.  AA publ.   Delta  |Delta|
