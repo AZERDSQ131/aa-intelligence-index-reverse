@@ -1,4 +1,57 @@
-# Methodology — reconstructing the AA Intelligence Index (v4.1.1)
+# Methodology — reconstructing the AA Intelligence Index (v4.3.2, with v4.1.1 archive)
+
+> **Current methodology: v4.3.2** (retrieved 2026-09-29). The v4.1.1 derivation
+> below is kept as an archive (§2–§3 frozen; legacy files:
+> `data/weights_v4.1.1.csv`, `data/models.csv`, `examples/claude-opus-5.json`,
+> `examples/kimi-k3.json`). New dumps go to `data/models_v4.3.2.csv`
+> (see `examples/v4.3.2-template.json`).
+
+## 0. What changed in v4.3.2 (2026-09-29)
+
+AA now versions the Index as **v4.3.2** with **10 evaluations / 11 score
+components** (Omniscience splits into Accuracy 10% + Non-hallucination 5%)
+and four categories **Agents 30 / Coding 20 / Scientific Reasoning 20 /
+General 30**:
+
+| # | Component (Index weight) | Category | Scoring → s |
+|---|---|---|---|
+| 1 | AA-Briefcase v1.1 — 15% | Agents | Elo → `clamp((Elo − 500) / 2000)`; anchored GPT-5.5 (medium) = 1000, frozen at model-addition time |
+| 2 | GDPval-AA v2.1 — 10% | Agents | Elo → `clamp((Elo − 500) / 2000)`; anchored DeepSeek V4.1 Flash (max) = 1600, frozen at model-addition time |
+| 3 | AutomationBench-AA — 5% | Agents | mean objective completion; 0 on guardrail violation / error |
+| 4 | Terminal-Bench 4.0 — 10% | Coding | pass@1 over 3 repeats (66 tasks) |
+| 5 | SciCode — 10% | Coding | pass@1, sub-problem scoring |
+| 6 | Omniscience Accuracy — 10% | General | proportion correct (6000 q.) |
+| 7 | Omniscience Non-hallu — 5% | General | `1 − hallucination rate` |
+| 8 | GDP.pdf — 10% | General | **All-pass** share over 500 attempts (100 tasks × 5); Mean Pass is secondary |
+| 9 | AA-LCR v1.1 — 5% | General | pass@1; v1.1 NOT comparable to v1.0 (prompt + 16 keys + judge changed) |
+| 10 | HLE — 10% | Scientific Reasoning | pass@1 |
+| 11 | CritPt — 10% | Scientific Reasoning | pass@1, challenge level (70 × 5 repeats) |
+
+Formula unchanged: `Index = 100 × Σ (wᵢ × sᵢ)`, Σwᵢ = 1.
+Old → new mapping: GDPval-AA (20%) splits into Briefcase 15% + GDPval v2.1
+10% + AutomationBench 5% on the agent side; Terminal-Bench 2.1 (16%) →
+Terminal-Bench 4.0 (10%) + SciCode held at 10%; τ³-Banking (14%) retired to
+additional evals; GPQA (6%) retired in v4.2; AA-LCR (6%) → AA-LCR v1.1 (5%);
+HLE 12% → 10%; CritPt held at 10%; Omniscience 8+4 → 10+5; new GDP.pdf 10%.
+
+### Open point: GDP.pdf metric
+
+AA reports two GDP.pdf numbers: headline **All-pass** (share of the 500
+attempts where *every* criterion passes) and secondary task-macro **Mean
+Pass** (mean criterion pass rate). The weights table lists both. This
+reconstruction takes **All-pass** as `s` — it is the headline metric and the
+closest analogue of pass@1 (an attempt counts iff fully correct). If a future
+reproduction shows Mean Pass fits better, the weights note + code will be
+updated and the change recorded here. Flag it in your PR if you test this.
+
+### Validation status v4.3.2
+
+No complete public component dump exists in this repo yet
+(`data/models_v4.3.2.csv` is header-only). The calculator, weights file,
+template (`examples/v4.3.2-template.json`, reconstructs 46.75 on all-0.5
+inputs) and tests (20) are in place; the next step is ≥ 1 full 11-component
+dump with Index + URL + date (see CONTRIBUTING.md). A mismatch is welcome
+too — it falsifies the extrapolation and will be documented here.
 
 This document is the full derivation behind the reconstruction. It records
 what the formula is, where each number comes from, and every discrepancy we
