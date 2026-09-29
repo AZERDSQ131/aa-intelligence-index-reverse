@@ -9,7 +9,17 @@ Ten components enter the Index. Nine of them are pass@1 style scores
 (their s_i is simply the published percentage divided by 100). One of them,
 GDPval-AA, is an Elo rating and needs a dedicated normalization:
 
-    s_GDPval = clamp((Elo - 500) / 2000, 0, 1)      # human Elo anchored at 1000
+    s_Elo = clamp((Elo - 500) / 2000, 0, 1)
+
+  - "AA-Briefcase v1.1" Elo, anchored to GPT-5.5 (medium) at 1000
+  - "GDPval-AA v2.1" Elo, anchored to DeepSeek V4.1 Flash (max) at 1600
+
+Both Elo scores are frozen at model-addition time. The fixed mapping keeps
+Index contributions stable over time.
+
+Legacy: methodology v4.1.1 used 10 components (single Elo: GDPval-AA).
+Use --weights data/weights_v4.1.1.csv --models data/models.csv to verify
+the archived v4.1.1 reproduction.
 
 Usage:
     python src/aa_index.py --all
