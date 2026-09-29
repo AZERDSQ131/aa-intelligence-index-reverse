@@ -213,9 +213,10 @@ not match the operative per-component weights — details in
 python -m unittest discover -s tests -v
 ```
 
-20 tests: Elo anchors (both v4.3.2 components), v4.3.2 weights sum + category
-masses + template reconstruction (46.75), and — frozen — the **v4.1.1
-reproduction for all 8 archived models**. CI runs the same suite on every push
+23 tests: Elo anchors (both v4.3.2 components), v4.3.2 weights sum + category
+masses + template reconstruction (46.75) + **29-model v4.3.2 reproduction
+(max |Δ| = 0.12)**, and — frozen — the **v4.1.1 reproduction for all
+8 archived models**. CI runs the same suite on every push
 ([.github/workflows/ci.yml](.github/workflows/ci.yml)) plus both `--all`
 verifications.
 
