@@ -285,7 +285,7 @@ def build_parser() -> argparse.ArgumentParser:
         "--weights",
         type=Path,
         default=DEFAULT_WEIGHTS_CSV,
-        help="path to the weights CSV (default: data/weights_v4.1.1.csv)",
+        help="path to the weights CSV (default: data/weights_v4.3.2.csv)",
     )
     parser.add_argument(
         "--models",
