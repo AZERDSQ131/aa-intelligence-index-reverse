@@ -307,7 +307,6 @@ pour que :
 - chacun puisse vérifier que l'Index publié d'un modèle correspond à ses
   scores de composantes ;
 - les chercheurs propagent immédiatement de nouveaux dumps de composantes
-│   ├── kimi-k3-v4.3.2.json    (vrai dump v4.3.2 : Kimi K3, Δ −0,04)
   dans l'Index ;
 - les changements de méthodologie (AA repondère périodiquement) soient
   suivis via des fichiers de poids versionnés (`weights_v4.x.y.csv`).
