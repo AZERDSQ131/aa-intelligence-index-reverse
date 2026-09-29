@@ -69,8 +69,8 @@ python src/aa_index.py --all
 # 2. Vérification archivée v4.1.1 (8 modèles, toujours verte)
 python src/aa_index.py --all --weights data/weights_v4.1.1.csv --models data/models.csv
 
-# 3. Décomposition complète (modèle archivé, depuis data/models.csv)
-python src/aa_index.py --model "Kimi K3" --weights data/weights_v4.1.1.csv --models data/models.csv
+# 3. Vérification archivée v4.1.1 (8 modèles, toujours verte)
+python src/aa_index.py --all --weights data/weights_v4.1.1.csv --models data/models.csv
 
 # 4. Calculer l'Index depuis ton propre dump JSON v4.3.2
 python src/aa_index.py --model examples/kimi-k3-v4.3.2.json
