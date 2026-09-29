@@ -263,7 +263,7 @@ def print_summary(rows: list[dict[str, str]], weights: dict[str, float]) -> None
         deltas.append(delta)
         flag = "" if abs(delta) <= 1.0 else "  <-- OUT OF TOLERANCE"
         print(
-            f"{display_name(row):<26}{index:>10.2f}{published:>10.2f}"
+            f"{display_name(row):<36}{index:>10.2f}{published:>10.2f}"
             f"{delta:>8.2f}{abs(delta):>9.2f}{flag}"
         )
 
