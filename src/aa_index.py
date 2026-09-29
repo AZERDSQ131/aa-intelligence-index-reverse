@@ -148,9 +148,10 @@ def load_model_json(path: Path) -> dict[str, float]:
     Accepted format (see examples/claude-opus-5.json):
 
         {
-          "model": "Claude Opus 5 (max)",
-          "elo_gdpval": 1824,
-          "terminal_bench_21": 0.891, ...
+          "model": "Example Model",
+          "elo_briefcase": 1234,
+          "elo_gdpval": 1600,
+          "terminal_bench_40": 0.5, ...
         }
 
     Keys use the same names as the columns of data/models_v4.3.2.csv.
