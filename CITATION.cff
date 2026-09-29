@@ -6,8 +6,8 @@ message: >-
 type: software
 authors:
   - name: Jules
-version: 0.1.0
-date-released: "2026-09-02"
+version: 0.2.0
+date-released: "2026-09-29"
 license: MIT
 repository-code: "https://github.com/AZERDSQ131/aa-intelligence-index-reverse"
 abstract: >-
