@@ -12,7 +12,7 @@ license: MIT
 repository-code: "https://github.com/AZERDSQ131/aa-intelligence-index-reverse"
 abstract: >-
   Independent, community reconstruction of the scoring formula behind the
-  Artificial Analysis Intelligence Index (methodology v4.1.1), with a
+  Artificial Analysis Intelligence Index (methodology v4.3.2, v4.1.1 archived), with a
   dependency-free calculator, machine-readable weights and component-score
   data. v4.1.1: 8 models reproducing the published Index within max |Delta| 0.30
   on the band ~56-63. v4.3.2: weights + calculator live, first public dump pending.
