@@ -101,10 +101,22 @@ def model_row_to_components(row: dict[str, str]) -> dict[str, float]:
     gdpval_normalize(); every other column is already an s in [0, 1].
     """
     components: dict[str, float] = {}
-    elo = row.get("elo_gdpval")
-    if elo not in (None, ""):
-        components[GDPVAL_COMPONENT] = gdpval_normalize(float(elo))
-    for column, component in COLUMN_TO_COMPONENT.items():
+
+    briefcase = row.get("elo_briefcase")
+    if briefcase not in (None, ""):
+        components[BRIEFCASE_COMPONENT] = elo_normalize(float(briefcase))
+
+    elo_legacy = row.get("elo_gdpval")
+    if elo_legacy not in (None, ""):
+        s = elo_normalize(float(elo_legacy))
+        components[GDPVAL_V21_COMPONENT] = s
+        components[GDPVAL_COMPONENT] = s  # legacy v4.1.1 spelling
+
+    elo_v21 = row.get("elo_gdpval_v21")
+    if elo_v21 not in (None, ""):
+        components[GDPVAL_V21_COMPONENT] = elo_normalize(float(elo_v21))
+
+    for column, component in {**LEGACY_COLUMN_TO_COMPONENT, **COLUMN_TO_COMPONENT}.items():
         value = row.get(column)
         if value not in (None, ""):
             components[component] = float(value)
