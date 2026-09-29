@@ -14,8 +14,7 @@ one rule is: **source or it didn't happen.**
      normalizes it;
    - the 9 other components as `s` in `[0, 1]` (percentage ÷ 100);
    - `index_aa`: the Index value displayed by AA at the same date;
-   - leave `delta` and `delta_bilan` empty — the tests compute `delta`;
-   - `dump_date`: `YYYY-MM-DD`.
+   - `dump_date` (`YYYY-MM-DD`) + `source` (URL);
 4. Run the verification:
 
    ```bash
