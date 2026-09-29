@@ -33,7 +33,7 @@ redistribution).
 
 ---
 
-## 2. The formula (v4.1.1)
+## 2. The formula — ARCHIVE (v4.1.1, superseded by §0 above)
 
 | # | Component | Weight | Category | Normalization |
 |---|---|---|---|---|
