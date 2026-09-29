@@ -18,5 +18,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Run tests
         run: python -m unittest discover -s tests -v
+      - name: Verify v4.3.2 models against published Index
+        run: python src/aa_index.py --all
       - name: Verify archived v4.1.1 models against published Index
         run: python src/aa_index.py --all --weights data/weights_v4.1.1.csv --models data/models.csv
