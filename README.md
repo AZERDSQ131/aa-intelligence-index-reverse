@@ -233,9 +233,8 @@ not an Index calculator). This repo fills that gap so that:
 
 ## Roadmap
 
-- [ ] **v0.2 — first v4.3.2 dump**: add ≥ 1 model with all **11 components**
-  + Index + URL + date (the single most valuable contribution right now;
-  a mismatch is welcome too — it falsifies the extrapolation).
+- [x] ~~First v4.3.2 dump~~ — done 2026-09-29: 29 models, max |Δ| = 0.12, bands ~14–58.
+- [ ] Keep the matrix fresh as AA adds models / re-weights (new `weights_vX.csv`, never edit history).
 - [ ] Data files for additional tracked models (v4.3.2 schema).
 - [x] ~~A `--weights` version switch once AA ships a v4.2~~ — done: `--weights`/
   `--models` flags ship, v4.3.2 is the default, v4.1.1 archived.
