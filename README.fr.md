@@ -69,7 +69,7 @@ python src/aa_index.py --all --json
 
 ### Exemple : une décomposition détaillée
 
-`python src/aa_index.py --model examples/kimi-k3.json` affiche la contribution
+`python src/aa_index.py --model examples/kimi-k3.json --weights data/weights_v4.1.1.csv --models data/models.csv` affiche la contribution
 de chaque benchmark :
 
 ```
