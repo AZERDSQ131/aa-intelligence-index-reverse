@@ -7,6 +7,11 @@ under a minute**.
 
 > **Not affiliated with Artificial Analysis.** Weights © Artificial Analysis
 > (CC BY 4.0); reconstruction, code and commentary: MIT. See [NOTICE](NOTICE).
+> **Status 2026-09-29:** calculator + weights updated to **v4.3.2** (11 score
+> components); the v4.1.1 8-model reproduction below is archived and still
+> passes via `--weights data/weights_v4.1.1.csv --models data/models.csv`.
+> `data/models_v4.3.2.csv` awaits its first full public dump — see
+> [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 
