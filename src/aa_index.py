@@ -242,6 +242,14 @@ def display_name(row: dict[str, str]) -> str:
 
 def print_summary(rows: list[dict[str, str]], weights: dict[str, float]) -> None:
     """Print the verification table: reconstructed Index vs published Index."""
+    if not rows:
+        print(f"Reconstructed AA Intelligence Index — weights {WEIGHTS_VERSION}")
+        print("No models in the matrix yet — add a row to data/models_v4.3.2.csv")
+        print("(see examples/v4.3.2-template.json and CONTRIBUTING.md).")
+        print("Archived v4.1.1 verification still available:")
+        print("  python src/aa_index.py --all"
+              " --weights data/weights_v4.1.1.csv --models data/models.csv")
+        return
     print(f"Reconstructed AA Intelligence Index — weights {WEIGHTS_VERSION}")
     print("-" * 78)
     print(f"{'Model':<26}{'Reconstr.':>10}{'AA publ.':>10}{'Delta':>8}{'|Delta|':>9}")
