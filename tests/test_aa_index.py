@@ -58,7 +58,8 @@ class TestDataFiles(unittest.TestCase):
         self.assertAlmostEqual(sum(self.weights.values()), 1.0, places=6)
 
     def test_weights_count(self):
-        self.assertEqual(len(self.weights), 10)
+        # 11 score components from 10 evaluations (Omniscience splits in 2).
+        self.assertEqual(len(self.weights), 11)
 
     def test_category_mass(self):
         # Operative masses v4.3.2: Agents 30, Coding 20, General 30,
