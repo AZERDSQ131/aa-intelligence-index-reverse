@@ -79,7 +79,33 @@ python src/aa_index.py --model examples/v4.3.2-template.json
 python src/aa_index.py --all --json
 ```
 
-### Exemple : une décomposition détaillée (ARCHIVE — v4.1.1)
+### Exemple : une décomposition détaillée
+
+`python src/aa_index.py --model examples/kimi-k3-v4.3.2.json` affiche la
+contribution de chaque benchmark (v4.3.2) :
+
+```
+Component                 weight       s  contribution
+----------------------------------------------------------------
+AA-Briefcase v1.1           0.15   0.503         7.539
+GDPval-AA v2.1              0.10   0.512         5.120
+AutomationBench-AA          0.05   0.583         2.914
+Terminal-Bench 4.0          0.10   0.126         1.263
+SciCode                     0.10   0.595         5.949
+Omniscience Accuracy        0.10   0.476         4.758
+Omniscience Non-hallu       0.05   0.468         2.340
+GDP.pdf                     0.10   0.220         2.200
+AA-LCR v1.1                 0.05   0.887         4.433
+HLE                         0.10   0.469         4.690
+CritPt                      0.10   0.234         2.343
+----------------------------------------------------------------
+Reconstructed Index                              43.55
+AA published Index                               43.59
+Delta (reconstr - AA)                            -0.04
+```
+
+<details>
+<summary>Exemple archivé (v4.1.1 — Kimi K3, match exact)</summary>
 
 `python src/aa_index.py --model examples/kimi-k3.json --weights data/weights_v4.1.1.csv --models data/models.csv` affiche la contribution
 de chaque benchmark :
