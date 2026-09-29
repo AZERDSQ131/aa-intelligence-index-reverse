@@ -94,8 +94,21 @@ class TestVerification(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.weights = aa_index.load_weights()
-        cls.rows = aa_index.load_models()
+        cls.weights = aa_index.load_weights(LEGACY_WEIGHTS)
+        cls.rows = aa_index.load_models(LEGACY_MODELS)
+
+    def test_weights_sum_to_one(self):
+        self.assertAlmostEqual(sum(self.weights.values()), 1.0, places=6)
+
+    def test_weights_count(self):
+        self.assertEqual(len(self.weights), 10)
+
+    def test_matrix_has_8_models_with_all_components(self):
+        self.assertEqual(len(self.rows), 8)
+        for row in self.rows:
+            components = aa_index.model_row_to_components(row)
+            for component in self.weights:
+                self.assertIn(component, components, f"{row['model']}: missing {component}")
 
     def test_published_deltas_match_bilan(self):
         expected = {
