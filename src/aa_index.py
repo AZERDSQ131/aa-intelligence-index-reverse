@@ -291,7 +291,7 @@ def build_parser() -> argparse.ArgumentParser:
         "--models",
         type=Path,
         default=DEFAULT_MODELS_CSV,
-        help="path to the models CSV (default: data/models.csv)",
+        help="path to the models CSV (default: data/models_v4.3.2.csv)",
     )
     return parser
 
