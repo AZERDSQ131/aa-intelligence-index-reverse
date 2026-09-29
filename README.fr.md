@@ -34,7 +34,7 @@ Gemini 3.7 Flash               55.94     56.03   -0.09     0.09
 8 modèles · max |Delta| = 0.30 · seuil de lock interne = 1.00
 ```
 
-*(Sortie exacte de `python src/aa_index.py --all`. Les valeurs à la main
+*(Sortie exacte de `python src/aa_index.py --all --weights data/weights_v4.1.1.csv --models data/models.csv`. Les valeurs à la main
 enregistrées pendant l'analyse diffèrent de ≤ 0.02 ; voir
 [docs/methodology.md](docs/methodology.md).)*
 
