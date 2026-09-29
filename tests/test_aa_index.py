@@ -101,15 +101,9 @@ class TestWeights432(unittest.TestCase):
         }
         self.assertEqual(self.weights, expected)
 
-    def test_models_matrix_schema(self):
-        # The v4.3.2 matrix exists and carries the new columns (no rows yet).
-        with open(MODELS_432, newline="") as f:
-            header = next(csv.reader(f))
-        for col in [
-            "elo_briefcase", "elo_gdpval", "automationbench_aa",
-            "terminal_bench_40", "gdp_pdf", "aa_lcr_11",
-        ]:
-            self.assertIn(col, header)
+    def test_models_matrix_full(self):
+        # 29 live (non-deprecated) models with all 11 components,
+        # dumped from the public Index page payload on 2026-09-29.
         rows = aa_index.load_models(MODELS_432)
         self.assertEqual(len(rows), 29)
         weights = aa_index.load_weights(WEIGHTS_432)
