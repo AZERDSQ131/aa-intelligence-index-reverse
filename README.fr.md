@@ -237,9 +237,8 @@ pour que :
 
 ## Feuille de route
 
-- [ ] **v0.2 — premier dump v4.3.2** : ajouter ≥ 1 modèle avec les **11 composantes**
-  + Index + URL + date (la contribution la plus utile en ce moment ; un mismatch
-  est bienvenu aussi — il falsifie l'extrapolation).
+- [x] ~~Premier dump v4.3.2~~ — fait le 2026-09-29 : 29 modèles, max |Δ| = 0,12, bandes ~14–58.
+- [ ] Garder la matrice à jour quand AA ajoute des modèles / repondère (nouveau `weights_vX.csv`, jamais d'édition d'historique).
 - [ ] Fichiers de données pour d'autres modèles trackés (schéma v4.3.2).
 - [x] ~~Un switch `--weights` quand AA publiera une v4.2~~ — fait : flags `--weights` /
   `--models`, v4.3.2 par défaut, v4.1.1 archivée.
