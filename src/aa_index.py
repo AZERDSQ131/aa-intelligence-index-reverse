@@ -126,7 +126,8 @@ def reconstruct_index(
         if component not in components:
             raise KeyError(
                 f"Missing component '{component}' — cannot reconstruct the Index. "
-                "Provide all 10 components (see data/models.csv for the format)."
+                "Provide all components (see data/models_v4.3.2.csv header "
+                "or examples/v4.3.2-template.json for the format)."
             )
         contributions[component] = 100.0 * weight * components[component]
     return sum(contributions.values()), contributions
