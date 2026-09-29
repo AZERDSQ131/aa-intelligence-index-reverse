@@ -15,8 +15,11 @@ under a minute**.
 `Index = 100 × Σ (wᵢ × sᵢ)` over 10 components, with GDPval-AA Elo normalized
 as `s = clamp((Elo − 500) / 2000)`.
 
-Recomputing the Index from **publicly displayed component scores** reproduces
-the published value for all 8 models tested, within the chart-reading margin:
+Recomputing the Index from **publicly displayed component scores** reproduced
+the published value for all 8 models tested, within the chart-reading margin.
+The v4.3.2 formula is the same weighted mean over **11 components**, with the
+same Elo mapping `clamp((Elo − 500) / 2000)` applied to **two** Elo ratings
+(AA-Briefcase v1.1 + GDPval-AA v2.1) — see [docs/methodology.md](docs/methodology.md) §0.
 
 ```
 Model                      Reconstr.  AA publ.   Delta  |Delta|
