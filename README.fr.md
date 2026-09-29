@@ -143,7 +143,28 @@ aa-intelligence-index-reverse/
     └── methodology.md         dérivation complète, sources, écarts
 ```
 
-## Les poids (v4.1.1)
+## Les poids (v4.3.2 — actuels)
+
+| Composante | Poids | Catégorie |
+|---|---|---|
+| AA-Briefcase v1.1 | 15% | Agents |
+| GDPval-AA v2.1 | 10% | Agents |
+| AutomationBench-AA | 5% | Agents |
+| Terminal-Bench 4.0 | 10% | Coding |
+| SciCode | 10% | Coding |
+| Omniscience Accuracy | 10% | General |
+| GDP.pdf | 10% | General |
+| Omniscience Non-hallu | 5% | General |
+| AA-LCR v1.1 | 5% | General |
+| HLE | 10% | Scientific Reasoning |
+| CritPt | 10% | Scientific Reasoning |
+
+Masses de catégories opérantes : **Agents 30 · Coding 20 · Scientific Reasoning 20 ·
+General 30**. Les deux Elo se normalisent par `s = clamp((Elo − 500) / 2000)` ;
+Briefcase ancrée à GPT-5.5 (medium) = 1000, GDPval v2.1 à DeepSeek V4.1 Flash (max) = 1600.
+
+<details>
+<summary>Poids archivés (v4.1.1)</summary>
 
 | Composante | Poids | Catégorie |
 |---|---|---|
