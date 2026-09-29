@@ -92,7 +92,7 @@ the published Index; that is the test that matters, and it is encoded in
 
 ---
 
-## 3. Evidence — 8-model reproduction (band ~56–63)
+## 3. Evidence — ARCHIVE: 8-model reproduction v4.1.1 (band ~56–63)
 
 Source of the `sᵢ`: chart dumps from AA (public display), **not** the
 Multiverse blog. The full matrix ships as
