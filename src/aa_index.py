@@ -13,8 +13,7 @@ GDPval-AA, is an Elo rating and needs a dedicated normalization:
 
 Usage:
     python src/aa_index.py --all
-    python src/aa_index.py --model "Kimi K3"
-    python src/aa_index.py --model examples/kimi-k3.json
+    python src/aa_index.py --model examples/v4.3.2-template.json
     python src/aa_index.py --all --json
 
 No third-party dependencies: standard library only (Python >= 3.9).
