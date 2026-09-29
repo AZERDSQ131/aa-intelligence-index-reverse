@@ -130,8 +130,10 @@ aa-intelligence-index-reverse/
 ├── CITATION.cff               comment citer cette reconstruction
 ├── CONTRIBUTING.md            comment ajouter un modèle / une correction
 ├── data/
-│   ├── weights_v4.1.1.csv     les 10 poids + catégories + normalisation
-│   └── models.csv             matrice sᵢ de 8 modèles + Index publié
+│   ├── weights_v4.3.2.csv     les 11 poids v4.3.2 (défaut actuel)
+│   ├── models_v4.3.2.csv      matrice sᵢ v4.3.2 (attend son premier dump)
+│   ├── weights_v4.1.1.csv     poids v4.1.1 archivés
+│   └── models.csv             matrice 8 modèles v4.1.1 archivée
 ├── src/
 │   └── aa_index.py            calculateur sans dépendance
 ├── tests/
