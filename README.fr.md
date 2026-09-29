@@ -137,8 +137,9 @@ aa-intelligence-index-reverse/
 ├── tests/
 │   └── test_aa_index.py       14 tests : formule, données, reproduction
 ├── examples/                  dumps JSON prêts à l'emploi
-│   ├── claude-opus-5.json
-│   └── kimi-k3.json
+│   ├── v4.3.2-template.json
+│   ├── claude-opus-5.json     (archive v4.1.1)
+│   └── kimi-k3.json           (archive v4.1.1)
 └── docs/
     └── methodology.md         §0 v4.3.2 + §§2-3 archive v4.1.1
 ```
