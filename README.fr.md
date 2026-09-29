@@ -130,6 +130,9 @@ v4.3.2 utilisent `examples/v4.3.2-template.json`.)
 }
 ```
 
+Les dumps v4.1.1 (`examples/claude-opus-5.json`, `examples/kimi-k3.json`)
+fonctionnent toujours avec `--weights data/weights_v4.1.1.csv --models data/models.csv`.
+
 Ajouter un modèle se fait de la même façon → une ligne CSV / un fichier JSON +
 une PR (voir [CONTRIBUTING.md](CONTRIBUTING.md)).
 
