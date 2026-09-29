@@ -267,7 +267,7 @@ def build_parser() -> argparse.ArgumentParser:
     target.add_argument(
         "--all",
         action="store_true",
-        help="verify every model in data/models.csv",
+        help="verify every model in the models CSV",
     )
     target.add_argument(
         "--model",
