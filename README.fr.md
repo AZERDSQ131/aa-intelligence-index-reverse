@@ -97,6 +97,7 @@ enregistrées pendant l'analyse diffèrent de ≤ 0.02 ; voir
 | | |
 |---|---|
 | ✅ **Validé (archive)** | Formule + poids v4.1.1 sur la **bande Index ~56–63** (8 modèles, max \|Δ\| 0.30) |
+| ✅ **Validé** | Formule + poids **v4.3.2** sur **29 modèles, Index ~14–58** (max \|Δ\| 0,12, hors bande inclus) |
 | ❌ **Pas encore** | Modèles **hors bande** (ex. Index ~30) — dumps de composantes indisponibles au moment de l'analyse |
 | ❌ **Hors scope** | Vitesse et coût : axes **séparés** sur AA, ils n'entrent pas dans l'Index |
 
