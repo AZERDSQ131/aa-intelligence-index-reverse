@@ -35,8 +35,8 @@ from pathlib import Path
 WEIGHTS_VERSION = "v4.1.1"
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-DEFAULT_WEIGHTS_CSV = REPO_ROOT / "data" / "weights_v4.1.1.csv"
-DEFAULT_MODELS_CSV = REPO_ROOT / "data" / "models.csv"
+DEFAULT_WEIGHTS_CSV = REPO_ROOT / "data" / "weights_v4.3.2.csv"
+DEFAULT_MODELS_CSV = REPO_ROOT / "data" / "models_v4.3.2.csv"
 
 # Archived v4.1.1 files (kept for reproducibility; see docs/methodology.md).
 LEGACY_WEIGHTS_CSV = REPO_ROOT / "data" / "weights_v4.1.1.csv"
