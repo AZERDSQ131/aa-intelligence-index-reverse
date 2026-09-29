@@ -1,7 +1,20 @@
 NOTICE — aa-intelligence-index-reverse
 ======================================
 
-Last updated: 2026-09-02
+Last updated: 2026-09-29
+
+0. Methodology change v4.1.1 -> v4.3.2
+----------------------------------------
+On 2026-09-29 the AA methodology page versions the Index as v4.3.2:
+10 evaluations / 11 score components, categories Agents 30 / Coding 20 /
+Scientific Reasoning 20 / General 30. This repo tracks the change as:
+new files data/weights_v4.3.2.csv, data/models_v4.3.2.csv and
+calculator default v4.3.2; the v4.1.1 files (data/weights_v4.1.1.csv,
+data/models.csv, examples/claude-opus-5.json, examples/kimi-k3.json)
+are frozen archives. No v4.3.2 public component dump is in the repo yet;
+the first full 11-component dump is the top contribution (see
+CONTRIBUTING.md). The GDP.pdf choice (All-pass headline as s) is
+documented as an open point in docs/methodology.md §0.
 
 1. What this project is
 -----------------------
