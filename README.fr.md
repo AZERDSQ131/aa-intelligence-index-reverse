@@ -15,7 +15,54 @@ toi-même en moins d'une minute**.
 
 ---
 
-## Le résultat, en un tableau (ARCHIVE — v4.1.1)
+## Le résultat, en un tableau (v4.3.2)
+
+`Index = 100 × Σ (wᵢ × sᵢ)` sur **11 composantes**, avec les deux Elo
+(AA-Briefcase v1.1 + GDPval-AA v2.1) normalisés par `s = clamp((Elo − 500) / 2000)`.
+
+Recalculer l'Index depuis le **payload public de la page Index (2026-09-29)**
+reproduit la valeur publiée pour les 29 modèles suivis, de ~14 à ~58 :
+
+```
+Model                                Reconstr.  AA publ.   Delta  |Delta|
+----------------------------------------------------------------------------------------
+Claude Opus 5.5 (max with fallback)      57.62     57.62    0.00     0.00
+Claude Opus 5.5 (xhigh with fallback)     55.98     55.99   -0.01     0.01
+Claude Sonnet 5.5 (max with fallback)     55.98     55.98   -0.00     0.00
+Claude Opus 5.5 (high with fallback)     53.58     53.58    0.00     0.00
+Claude Fable 5.1 (max with fallback)     53.35     53.35    0.00     0.00
+Claude Fable 5.1 (xhigh with fallback)     53.20     53.20    0.00     0.00
+GPT-6 Astra (max)                        52.67     52.67    0.00     0.00
+GPT-6 Astra (xhigh)                      52.39     52.39   -0.00     0.00
+Claude Sonnet 5.5 (xhigh with fallback)     51.85     51.85    0.00     0.00
+Muse Spark 1.3 (max)                     48.01     48.09   -0.08     0.08
+GPT-6 Sol (max)                          47.53     47.53   -0.00     0.00
+Grok 4.7 (xhigh)                         46.45     46.45   -0.00     0.00
+MiMo-V2.6-Pro                            46.28     46.32   -0.04     0.04
+Qwen3.8 Max (0902)                       45.30     45.42   -0.12     0.12
+GLM-5.3 (max)                            44.66     44.78   -0.12     0.12
+Step 5 Preview                           43.73     43.73   -0.00     0.00
+Kimi K3 (max)                            43.55     43.59   -0.04     0.04
+GLM-5.3-Flash                            41.75     41.81   -0.06     0.06
+Gemini 3.8 Flash (high)                  40.93     40.93   -0.00     0.00
+DeepSeek V4.1 Flash (max)                39.40     39.46   -0.06     0.06
+GPT-6 Luna (max)                         37.26     37.26   -0.00     0.00
+Qwen3.8 27B (xhigh)                      33.66     33.70   -0.04     0.04
+K2 Horizon 375B A23B                     30.44     30.50   -0.06     0.06
+MiniMax-M3                               29.20     29.22   -0.02     0.02
+Inkling                                  25.02     24.98    0.04     0.04
+Nemotron 3 Ultra                         22.95     22.93    0.02     0.02
+Gemini 3.5 Flash-Lite                    22.21     22.17    0.04     0.04
+Muse Glimmer (high)                      17.48     17.48   -0.00     0.00
+Mistral Medium 3.5                       14.23     14.19    0.04     0.04
+----------------------------------------------------------------------------------------
+29 modèles · max |Delta| = 0.12 · seuil de lock interne = 1.00
+```
+
+*(Sortie exacte de `python src/aa_index.py --all`.)*
+
+<details>
+<summary>Résultat archivé (v4.1.1, 8 modèles, bande ~56–63)</summary>
 
 `Index = 100 × Σ (wᵢ × sᵢ)` sur 10 composantes, avec l'Elo GDPval-AA normalisé
 par `s = clamp((Elo − 500) / 2000)`.
