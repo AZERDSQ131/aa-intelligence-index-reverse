@@ -125,8 +125,41 @@ class TestWeights432(unittest.TestCase):
         self.assertAlmostEqual(index, 46.75, places=6)
         self.assertAlmostEqual(sum(contributions.values()), index)
 
-    def test_json_output_empty_matrix(self):
-        payload = json.loads(aa_index.to_json([], self.weights))
+    def test_all_deltas_within_tolerance(self):
+        # The core claim: max |Delta| <= 1.0 on all 29 models, bands 14-58.
+        weights = aa_index.load_weights(WEIGHTS_432)
+        for row in aa_index.load_models(MODELS_432):
+            components = aa_index.model_row_to_components(row)
+            index, _ = aa_index.reconstruct_index(components, weights)
+            self.assertLessEqual(
+                abs(index - float(row["index_aa"])), 1.0,
+                msg=f"{row['model']}: |Delta| exceeds lock threshold 1.0",
+            )
+
+    def test_max_abs_delta_is_012(self):
+        # Exact recomputation over the 29-model matrix: max |Delta| = 0.12
+        # (Qwen3.8 Max / GLM-5.3); most rows match to <= 0.06.
+        weights = aa_index.load_weights(WEIGHTS_432)
+        deltas = []
+        for row in aa_index.load_models(MODELS_432):
+            components = aa_index.model_row_to_components(row)
+            index, _ = aa_index.reconstruct_index(components, weights)
+            deltas.append(abs(index - float(row["index_aa"])))
+        self.assertAlmostEqual(max(deltas), 0.12, delta=0.011)
+
+    def test_kimi_k432_json_matches_matrix(self):
+        data = aa_index.load_model_json(REPO_ROOT / "examples" / "kimi-k3-v4.3.2.json")
+        row = {k: "" if v is None else str(v) for k, v in data.items()}
+        if "index_aa" not in row and data.get("published_index_aa") is not None:
+            row["index_aa"] = str(data["published_index_aa"])
+        weights = aa_index.load_weights(WEIGHTS_432)
+        components = aa_index.model_row_to_components(row)
+        index, _ = aa_index.reconstruct_index(components, weights)
+        self.assertAlmostEqual(index, 43.55, delta=0.011)
+
+    def test_json_output_shape(self):
+        rows = aa_index.load_models(MODELS_432)
+        payload = json.loads(aa_index.to_json(rows, self.weights))
         self.assertEqual(payload["weights_version"], "v4.3.2")
         self.assertEqual(len(payload["models"]), 29)
         self.assertLessEqual(payload["max_abs_delta"], 1.0)
