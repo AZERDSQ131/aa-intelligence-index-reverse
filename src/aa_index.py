@@ -95,7 +95,7 @@ def load_weights(path: Path = DEFAULT_WEIGHTS_CSV) -> dict[str, float]:
 
 
 def model_row_to_components(row: dict[str, str]) -> dict[str, float]:
-    """Convert one row of data/models.csv into {component: s} with s in [0, 1].
+    """Convert one model row (CSV row or JSON dump) into {component: s}.
 
     Elo columns hold ratings and are normalized with elo_normalize();
     every other column is already an s in [0, 1].
