@@ -76,7 +76,7 @@ def gdpval_normalize(elo: float) -> float:
 
 
 def load_weights(path: Path = DEFAULT_WEIGHTS_CSV) -> dict[str, float]:
-    """Load the component weights from data/weights_v4.1.1.csv.
+    """Load the component weights from a weights CSV.
 
     Raises ValueError if the weights do not sum to ~1.
     """
