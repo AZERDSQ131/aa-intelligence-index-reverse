@@ -128,6 +128,9 @@ Add a model the same way → one CSV row / one JSON file + a PR
 ```
 aa-intelligence-index-reverse/
 ├── README.md                  ← you are here (English)
+Legacy v4.1.1 dumps (`examples/claude-opus-5.json`, `examples/kimi-k3.json`)
+keep working with `--weights data/weights_v4.1.1.csv --models data/models.csv`.
+
 ├── README.fr.md               ← version française
 ├── LICENSE                    MIT + data-provenance notice
 ├── NOTICE                     non-affiliation, provenance, known limits
