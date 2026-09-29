@@ -67,6 +67,20 @@ GDPVAL_V21_COMPONENT = "GDPval-AA v2.1"
 # Mapping: column name in data/models_v4.3.2.csv -> component name in weights CSV.
 # Order matters for display only; the math is a plain weighted sum.
 COLUMN_TO_COMPONENT = {
+    "automationbench_aa": "AutomationBench-AA",
+    "terminal_bench_40": "Terminal-Bench 4.0",
+    "hle": "HLE",
+    "omniscience_accuracy": "Omniscience Accuracy",
+    "omniscience_non_hallu": "Omniscience Non-hallu",
+    "scicode": "SciCode",
+    "critpt": "CritPt",
+    "gdp_pdf": "GDP.pdf",
+    "aa_lcr_11": "AA-LCR v1.1",
+}
+
+# Legacy v4.1.1 columns, still accepted so --weights v4.1.1 keeps working.
+# (Merged into model_row_to_components via ELO handling + this map.)
+LEGACY_COLUMN_TO_COMPONENT = {
     "terminal_bench_21": "Terminal-Bench 2.1",
     "tau3_banking": "tau3-Banking",
     "hle": "HLE",
