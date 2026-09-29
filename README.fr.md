@@ -73,7 +73,7 @@ python src/aa_index.py --all --weights data/weights_v4.1.1.csv --models data/mod
 python src/aa_index.py --model "Kimi K3" --weights data/weights_v4.1.1.csv --models data/models.csv
 
 # 4. Calculer l'Index depuis ton propre dump JSON v4.3.2
-python src/aa_index.py --model examples/v4.3.2-template.json
+python src/aa_index.py --model examples/kimi-k3-v4.3.2.json
 
 # 5. Sortie lisible par machine
 python src/aa_index.py --all --json
