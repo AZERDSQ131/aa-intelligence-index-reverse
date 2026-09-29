@@ -99,7 +99,7 @@ normalisation Elo GDPval sont correctes.
 ```jsonc
 // examples/claude-opus-5.json — mêmes clés que les colonnes de data/models.csv
 {
-  "model": "Claude Opus 5",
+  "model": "Example Model",
   "variant": "max",
   "source": "https://artificialanalysis.ai/models — dump de chart AAAA-MM-JJ",
   "elo_briefcase": 1000,         // normalisé : (1000-500)/2000 = 0.25
