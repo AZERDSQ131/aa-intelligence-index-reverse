@@ -99,18 +99,19 @@ GDPval Elo normalization are right.
 {
   "model": "Claude Opus 5",
   "variant": "max",
-  "source": "https://artificialanalysis.ai/models — chart dump 2026-09-01",
-  "elo_gdpval": 1824,              // normalized: (1824-500)/2000 = 0.662
-  "terminal_bench_21": 0.891,      // all other scores are s in [0, 1]
-  "tau3_banking": 0.421,
-  "hle": 0.549,
-  "omniscience_accuracy": 0.609,
-  "omniscience_non_hallu": 0.392,
-  "scicode": 0.557,
-  "gpqa": 0.932,
-  "critpt": 0.291,
-  "aa_lcr": 0.757,
-  "published_index_aa": 63.05
+  "source": "https://artificialanalysis.ai/models — chart dump YYYY-MM-DD",
+  "elo_briefcase": 1000,         // normalized: (1000-500)/2000 = 0.25
+  "elo_gdpval": 1600,            // normalized: (1600-500)/2000 = 0.55
+  "automationbench_aa": 0.5,     // all other scores are s in [0, 1]
+  "terminal_bench_40": 0.5,
+  "scicode": 0.5,
+  "omniscience_accuracy": 0.5,
+  "omniscience_non_hallu": 0.5,
+  "gdp_pdf": 0.5,                // All-pass share (headline metric)
+  "aa_lcr_11": 0.5,
+  "hle": 0.5,
+  "critpt": 0.5,
+  "published_index_aa": 50.0
 }
 ```
 
