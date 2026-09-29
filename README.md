@@ -58,8 +58,8 @@ python src/aa_index.py --all
 # 2. Full per-component breakdown for one model (from data/models.csv)
 python src/aa_index.py --model "Kimi K3"
 
-# 3. Compute the Index from your own component dump (JSON)
-python src/aa_index.py --model examples/claude-opus-5.json
+# 3. Full per-component breakdown for one archived model
+python src/aa_index.py --model "Kimi K3" --weights data/weights_v4.1.1.csv --models data/models.csv
 
 # 4. Compute the Index from your own v4.3.2 component dump (JSON)
 python src/aa_index.py --model examples/v4.3.2-template.json
