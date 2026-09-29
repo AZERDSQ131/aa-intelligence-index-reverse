@@ -36,7 +36,6 @@ class TestCoreMath(unittest.TestCase):
         self.assertAlmostEqual(aa_index.gdpval_normalize(100), 0.0)    # clamped
 
     def test_reconstruct_index_known_value(self):
-        # Hand-computed example: two components only.
         weights = {"A": 0.6, "B": 0.4}
         components = {"A": 0.5, "B": 1.0}
         index, contributions = aa_index.reconstruct_index(components, weights)
