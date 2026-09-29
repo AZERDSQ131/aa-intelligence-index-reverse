@@ -242,6 +242,14 @@ def to_json(rows: list[dict[str, str]], weights: dict[str, float]) -> str:
     max_abs_delta = max((abs(r["delta"]) for r in results), default=0.0)
     return json.dumps(
         {
+    if not rows:
+        print(f"Reconstructed AA Intelligence Index — weights {WEIGHTS_VERSION}")
+        print("No models in the matrix yet — add a row to data/models_v4.3.2.csv")
+        print("(see examples/v4.3.2-template.json and CONTRIBUTING.md).")
+        print("Archived v4.1.1 verification still available:")
+        print("  python src/aa_index.py --all"
+              " --weights data/weights_v4.1.1.csv --models data/models.csv")
+        return
             "weights_version": WEIGHTS_VERSION,
             "max_abs_delta": round(max_abs_delta, 4),
             "tolerance": 1.0,
