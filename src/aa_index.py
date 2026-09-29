@@ -320,7 +320,7 @@ def main(argv: list[str] | None = None) -> int:
         matches = [
             row
             for row in load_models(args.models)
-            if row["model"].lower() == args.model.lower()
+            if row.get("model", "").lower() == args.model.lower()
             or display_name(row).lower() == args.model.lower()
         ]
         if not matches:
