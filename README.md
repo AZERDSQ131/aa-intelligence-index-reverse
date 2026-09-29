@@ -128,8 +128,10 @@ aa-intelligence-index-reverse/
 ├── CITATION.cff               how to cite this reconstruction
 ├── CONTRIBUTING.md            how to add a model / a correction
 ├── data/
-│   ├── weights_v4.1.1.csv     the 10 weights + categories + normalization
-│   └── models.csv             sᵢ matrix for 8 models + published Index
+│   ├── weights_v4.3.2.csv     the 11 v4.3.2 weights (current default)
+│   ├── models_v4.3.2.csv      v4.3.2 sᵢ matrix (awaits first dump)
+│   ├── weights_v4.1.1.csv     archived v4.1.1 weights
+│   └── models.csv             archived v4.1.1 matrix (8 models)
 ├── src/
 │   └── aa_index.py            stdlib-only calculator & verifier
 ├── tests/
