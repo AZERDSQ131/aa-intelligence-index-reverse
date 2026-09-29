@@ -170,10 +170,11 @@ not match the operative per-component weights — details in
 python -m unittest discover -s tests -v
 ```
 
-14 tests cover the GDPval normalization anchors, the weights' sum and category
-masses, and — most importantly — the **reproduction of the published Index for
-all 8 models**. CI runs the same suite on every push
-([.github/workflows/ci.yml](.github/workflows/ci.yml)).
+20 tests: Elo anchors (both v4.3.2 components), v4.3.2 weights sum + category
+masses + template reconstruction (46.75), and — frozen — the **v4.1.1
+reproduction for all 8 archived models**. CI runs the same suite on every push
+([.github/workflows/ci.yml](.github/workflows/ci.yml)) plus both `--all`
+verifications.
 
 ## Why this exists
 
