@@ -47,7 +47,7 @@ will document it in `docs/methodology.md`.
 
 If AA ships new weights (v4.2, v5…):
 
-- Do **not** edit `data/weights_v4.1.1.csv`.
+- Do **not** edit `data/weights_v4.3.2.csv` (nor `data/weights_v4.1.1.csv`).
 - Add a new `data/weights_v4.x.y.csv` + update the source links, and open an
   issue titled `Methodology update: vX.Y.Z`.
 
