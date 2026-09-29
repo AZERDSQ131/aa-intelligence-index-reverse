@@ -144,7 +144,6 @@ GDP.pdf                     0.10   0.220         2.200
 AA-LCR v1.1                 0.05   0.887         4.433
 HLE                         0.10   0.469         4.690
 CritPt                      0.10   0.234         2.343
-| ✅ **Validé** | Formule + poids **v4.3.2** sur **29 modèles, Index ~14–58** (max \|Δ\| 0,12, hors bande inclus) |
 ----------------------------------------------------------------
 Reconstructed Index                              43.55
 AA published Index                               43.59
