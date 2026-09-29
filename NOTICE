@@ -8,8 +8,10 @@ Last updated: 2026-09-02
 An independent, community reconstruction of the scoring formula behind the
 **Artificial Analysis Intelligence Index** (methodology v4.1.1), shipped as:
 
-- a machine-readable weights table (`data/weights_v4.1.1.csv`)
-- a machine-readable matrix of public component scores (`data/models.csv`)
+- a machine-readable weights table (`data/weights_v4.3.2.csv`, current;
+  `data/weights_v4.1.1.csv`, archive)
+- machine-readable matrices of public component scores
+  (`data/models_v4.3.2.csv`, pending first dump; `data/models.csv`, 8-model v4.1.1 archive)
 - a small, dependency-free calculator (`src/aa_index.py`)
 - a worked example reproducing the published v4.1.1 Index of 8 models to within
   |Delta| <= 0.30 (see `examples/` and the README)
