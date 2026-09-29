@@ -30,7 +30,10 @@ one rule is: **source or it didn't happen.**
 Index ~30 — see the roadmap. An out-of-band match extends validation more
 than ten in-band models would.
 
-## Priority: out-of-band validation
+`data/models.csv`, `data/weights_v4.1.1.csv` and `examples/claude-opus-5.json` /
+`examples/kimi-k3.json` reproduce the 8-model band ~56–63 and must not be
+edited except to fix a proven transcription error (open an issue first with
+URL + date). Verify them with:
 
 ```bash
 python src/aa_index.py --all --weights data/weights_v4.1.1.csv --models data/models.csv
