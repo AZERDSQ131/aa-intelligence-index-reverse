@@ -1,0 +1,18 @@
+{
+  "model": "Example Model",
+  "variant": "max",
+  "source": "https://artificialanalysis.ai/models — chart dump YYYY-MM-DD",
+  "dump_date": "YYYY-MM-DD",
+  "elo_briefcase": 1000,
+  "elo_gdpval": 1600,
+  "automationbench_aa": 0.5,
+  "terminal_bench_40": 0.5,
+  "scicode": 0.5,
+  "omniscience_accuracy": 0.5,
+  "omniscience_non_hallu": 0.5,
+  "gdp_pdf": 0.5,
+  "aa_lcr_11": 0.5,
+  "hle": 0.5,
+  "critpt": 0.5,
+  "published_index_aa": 50.0
+}
