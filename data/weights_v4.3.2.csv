@@ -1,0 +1,12 @@
+component,weight,category,metric_type,notes
+AA-Briefcase v1.1,0.15,Agents,elo_normalized,"s = clamp((Elo - 500) / 2000, 0, 1); Elo anchored to GPT-5.5 (medium) at 1000; frozen at model-addition time"
+GDPval-AA v2.1,0.10,Agents,elo_normalized,"s = clamp((Elo - 500) / 2000, 0, 1); Elo anchored to DeepSeek V4.1 Flash (max) at 1600; frozen at model-addition time"
+AutomationBench-AA,0.05,Agents,pass_at_1_guarded,"s = mean objective-completion rate; task scores 0 if any guardrail violated or on error"
+Terminal-Bench 4.0,0.10,Coding,pass_at_1,"s = score % / 100; pass@1 averaged over 3 repeats; 66 tasks"
+SciCode,0.10,Coding,pass_at_1,"s = score % / 100; sub-problem scoring, test set"
+Omniscience Accuracy,0.10,General,pass_at_1,"s = proportion correct (6000 questions)"
+Omniscience Non-hallu,0.05,General,one_minus_rate,"s = 1 - hallucination rate"
+GDP.pdf,0.10,General,all_pass,"s = All-pass share over 500 attempts (100 tasks x 5); Mean Pass is secondary, see docs/methodology.md"
+AA-LCR v1.1,0.05,General,pass_at_1,"s = score % / 100; v1.1 scores not comparable to v1.0 (prompt + keys + judge changed)"
+HLE,0.10,Scientific Reasoning,pass_at_1,"s = score % / 100"
+CritPt,0.10,Scientific Reasoning,pass_at_1,"s = score % / 100; challenge-level, 70 challenges x 5 repeats"
