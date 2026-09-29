@@ -49,8 +49,6 @@ during the original analysis differ by ≤ 0.02; see [docs/methodology.md](docs/
 | | |
 |---|---|
 | ✅ **Validated (archive)** | Formula + weights v4.1.1 on the **Index band ~56–63** (8 models, max \|Δ\| 0.30) |
-| 🆕 **In progress** | Weights + calculator for **v4.3.2** (11 components); first full public dump still needed |
-| ❌ **Not yet** | **Out-of-band** models (e.g. Index ~30) — component dumps unavailable at analysis time |
 | ❌ **Out of scope** | Speed and cost: they are **separate axes** on AA, not part of the Index |
 
 All deltas are ≤ 0 — consistent with rounding noise in the public component
